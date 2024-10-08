@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes en HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles-2.css">
+    <link rel="stylesheet" href="enlaces.css">
+    <script src="https://kit.fontawesome.com/8b10682772.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="menu">
+            <div class="logo"> <img src="Help-Step.png" /> </div>
+            <a href="index.html">Inicio</a>
+            <a class="active" href="#">Tutoriales HTML</a>
+            <a href="CSS-1.html">Tutoriales CSS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="items item1"> <center> Imagenes </center> </div>
+        <div class="items item2"> 
+            <a href="HTML-1.html"> 1. Introduccion </a><br>
+            <a href="HTML-2.html"> 2. Etiquetas </a><br> 
+            <a href="HTML-3.html"> 3. Enlaces </a><br> 
+            <a href="HTML-4.html"> 4. Listas </a><br> 
+            <a class="active" href="#"> 5. Imágenes </a><br> 
+            <a href="HTML-6.html"> 6. Tablas </a><br> 
+            <a href="HTML-7.html"> 7. Formularios </a><br> 
+            <a href="HTML-8.html"> 8. Audios y Videos </a><br> 
+            <a href="HTML-9.html"> 9. Gráficos SVG </a><br> 
+        </div>
+        <div class="items item4">
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Imágenes </center> </i><br>
+            Las imágenes en HTML son un elemento clave para enriquecer el contenido visual de una página web. Se utilizan para mostrar gráficos, fotos, logotipos, íconos, y más. <br>
+            La etiqueta &lt;img&gt; en HTML soporta varios formatos de imagen, cada uno con sus propias características y casos de uso. Los formatos más comunes que se pueden utilizar con la etiqueta &lt;img&gt; son: jpg, jpeg, png, gif, webp... pero tambien permite formatosde imagenes vectoriales como svg, y formatos de imagenes especializados como bmp y avif, y los antiguos tiff y tif. <br> 
+            A continuación, te proporciono una explicación completa sobre cómo se manejan las imágenes en HTML. <br>
+            <br>
+            <br>
+            <i style="color: #320812;"> Etiqueta img </i> <br>
+            La etiqueta &lt;img&gt; se utiliza para incrustar imágenes en un documento HTML. Es una etiqueta auto-cerrada, lo que significa que no necesita una etiqueta de cierre. La etiqueta img tiene dos atributos base, y estos son: <br>
+            <br>
+            <i style="color: #320812; font-size: 22px;"> Atributo src </i><br>
+            El atributo src (source) es obligatorio y especifica la URL de la imagen que se va a mostrar. La URL puede ser relativa o absoluta. Una imagen es relativa si la imagen está en el mismo servidor, se puede invocar por medio del nombre del archivo o en caso de que esté en una carpeta por medio de la ruta de la carpeta y el nombre del archivo. En cambio, una imagen es absoluta si la imagen está en otro servidor, se puede invocar por medio del url de la imagen. <br>
+            <br>
+            <i style="color: #320812; font-size: 22px;"> Atributo alt </i><br>
+            El atributo alt (alternative text) es obligatorio y proporciona una descripción alternativa de la imagen si no se puede cargar. Además, es esencial para la accesibilidad web, ya que los lectores de pantalla utilizan este texto para describir la imagen a usuarios con discapacidades visuales. <br>
+            <br>
+            Ahora los ejemplos con una imagen relativa y una imagen absoluta: <br>
+            Imagen relativa: <br>
+            <p class="html"> &lt;img src="ola.jpg" alt="ola"&gt; </p> 
+            <img src="ola.jpg" alt="ola">
+            <br><br>
+            <p class="html"> &lt;img src="https://as2.ftcdn.net/v2/jpg/02/13/61/87/1000_F_213618717_OtjtaJR6zOBtZO1QKUHrcGS1TTXWGxqV.jpg" alt="El mar"&gt; </p>
+            <img src="https://as2.ftcdn.net/v2/jpg/02/13/61/87/1000_F_213618717_OtjtaJR6zOBtZO1QKUHrcGS1TTXWGxqV.jpg" alt="El mar"><br>
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 22px;"> Atributos width y height </i><br>
+            Los atributos width (ancho) y height (alto) se utilizan para especificar las dimensiones de la imagen. Los valores se pueden definir en píxeles (px) o en porcentajes (%). <br>
+            <p class="html"> &lt;img src="ola.jpg" alt="ola" width="600px" height="400"&gt; </p> 
+            <img src="ola.jpg" alt="ola" width="600px" height="400"><br>
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 22px;"> Atributo title </i><br>
+            El atributo title se utiliza para proporcionar un texto emergente que aparece cuando un usuario pasa el ratón sobre la imagen. Este fucniona como el titulo de la imagen <br>
+            <p class="html"> &lt;img src="ola.jpg" alt="ola" title:"Ola en el mar"&gt; </p> 
+            <img src="ola.jpg" alt="ola" title="Ola en el mar"><br>
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 22px;"> Imagenes como enlaces </i><br>
+            Puedes hacer que una imagen actúe como un enlace utilizando la etiqueta &lt;a&gt;. <br>
+            <p class="html"> &lt;a href=" https://bit.ly/CodingHTML01"&gt;&lt;img src="html5.png" alt="HTML5" title:"Logo de HTML5"&gt;&lt;/a&gt; </p> 
+            <a href=" https://bit.ly/CodingHTML01"><img src="html5.png" alt="HTML5" title="Logo de HTML5"></a><br>
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 22px;"> Mapas de Imagen (&lt;map&gt; y &lt;area&gt;) </i><br>
+            Un mapa de imagen te permite definir áreas específicas dentro de una imagen que son clicables, dirigiendo al usuario a diferentes enlaces. <br>
+            &lt;map&gt;: Enlaza la imagen con el mapa de imagen definido. <br>
+            &lt;area&gt;: Define las áreas clicables, con atributos como shape (forma), coords (coordenadas), y href (enlace). <br>
+            <p class="html"> 
+                <br>
+                &lt;img src="html5.png" alt="HTML5" usemap="#mapa-ejemplo"&gt; <br>
+                &lt;map name="mapa-ejemplo"&gt; <br>
+                &emsp;    &lt;area shape="circle" coords="18,18,342,342" href="https://bit.ly/CodingHTML01" alt="Enlace 2"&gt; <br>
+                &emsp;    &lt;area shape="rect" coords="0,0,360,360" href="https://www.youtube.com/@CodingTube" alt="Enlace 1"&gt; <br>
+                &lt;/map&gt; <br><br>
+            </p> 
+            <img src="html5.png" alt="HTML5" usemap="#mapa-ejemplo">
+            <map name="mapa-ejemplo">
+                <area shape="circle" coords="18,18,342,342" href="https://bit.ly/CodingHTML01" alt="Enlace 2">
+                <area shape="rect" coords="0,0,360,360" href="https://www.youtube.com/@CodingTube" alt="Enlace 1">
+            </map>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 22px;"> Atributo loading </i><br>
+            El atributo loading controla la carga diferida de imágenes, lo que puede mejorar el rendimiento de la página. &lt;a&gt;. <br>
+            lazy: Retrasa la carga de la imagen hasta que esté a punto de aparecer en la pantalla. <br>
+            eager: Carga la imagen de inmediato. <br>
+            <p class="html"> &lt;img src="https://as2.ftcdn.net/v2/jpg/02/13/61/87/1000_F_213618717_OtjtaJR6zOBtZO1QKUHrcGS1TTXWGxqV.jpg" alt="Mar" loading="lazy"&gt; </p> 
+            <img src="https://as2.ftcdn.net/v2/jpg/02/13/61/87/1000_F_213618717_OtjtaJR6zOBtZO1QKUHrcGS1TTXWGxqV.jpg" alt="Mar" loading="lazy"><br>
+            <br>
+        </div>
+
+        <div class="items item5 social">
+            <p>
+                Contactanos: 
+                <a href="https://www.facebook.com/lucy.jimenez.16121471?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Lucy </a>
+                <a href="https://www.instagram.com/_lucyjimenez_?igsh=MWp6OGx5YnV4cjlxMw=="><i class="fa-brands fa-instagram "></i> Lucy </a>
+                <a href="mailto:l20520363@chilpancingo.tecnm.mx"><i class="fa-regular fa-envelope-open "></i> Lucy </a>
+                <a href="https://www.facebook.com/FelixJosue.Bautista?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Félix </a>
+                <a href="https://www.instagram.com/fmk_alguienmas?igsh=MXNtNGswandyNWN6eA=="><i class="fa-brands fa-instagram "></i> Félix</a>
+                <a href="mailto:xilef_osu@hotmail.com"><i class="fa-regular fa-envelope-open "></i> Félix</a>
+            </p>
+            <p style="text-align: right;">
+                Chilpancingo de los bravo, Guerrero. Fecha de creación: 01/09/2024
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

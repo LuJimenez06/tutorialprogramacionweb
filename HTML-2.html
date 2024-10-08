@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas de HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles-2.css">
+    <link rel="stylesheet" href="enlaces.css">
+    <script src="https://kit.fontawesome.com/8b10682772.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="menu">
+            <div class="logo"> <img src="Help-Step.png" /> </div>
+            <a href="index.html">Inicio</a>
+            <a class="active" href="#">Tutoriales HTML</a>
+            <a href="CSS-1.html">Tutoriales CSS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="items item1"> <center> Etiquetas </center> </div>
+        <div class="items item2">
+            <a href="HTML-1.html"> 1. Introduccion a HTML </a><br> 
+            <a class="active" href="#"> 2. Etiquetas </a><br>
+            <a href="HTML-3.html"> 3. Enlaces </a><br> 
+            <a href="HTML-4.html"> 4. Listas </a><br> 
+            <a href="HTML-5.html"> 5. Imagenes </a><br> 
+            <a href="HTML-6.html"> 6. Tablas </a><br> 
+            <a href="HTML-7.html"> 7. Formularios </a><br> 
+            <a href="HTML-8.html"> 8. Audios y Videos </a><br> 
+            <a href="HTML-9.html"> 9. Gráficos SVG </a><br> 
+           
+            
+        </div>
+        <div class="items item4">
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Etiquetas </center> </i><br>
+            Las etiquetas en HTML son los componentes básicos del lenguaje HTML (HyperText Markup Language) 
+            que se utilizan para crear y estructurar el contenido en una página web. Cada etiqueta define un 
+            elemento dentro de la página y especifica cómo se debe mostrar o comportar ese contenido en el 
+            navegador. <br>
+            Las etiquetas HTML son fundamentales para dar formato, estructurar y definir la semántica del 
+            contenido en una página web. Sin etiquetas, un documento HTML no tendría estructura ni significado 
+            claro para el navegador o los motores de búsqueda. <br>
+            Antes de empezar hay que tener en cuenta algo muy importante, dentro de la etiqueta head se pone 
+            información importante para la página, pero que no se muestra dentro de la misma, sin embargo, 
+            todo lo que pongamos dentro de la etiqueta body si se va a mostrar en la página, con esto aclarado 
+            continuemos. <br>
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Etiquetas principales </center> </i><br>
+            <i style="color: #320812; font-size: 22px;"> Etiquetas de encabezados </i><br> <br>
+            Las etiquetas de encabezado son las etiquetas h1, h2, h3, h4, h5 y h6, estas se utilizan para definir 
+            títulos y subtítulos en la página. Las etiquetas h tienen distintos tamaños, siendo h1 la más grande y 
+            h6 el más pequeño. A continuación los ejemplos: 
+            <table>
+                <tr>
+                    <td> 
+                        <p class="html"> 
+                            <br>
+                            &lt;body&gt;<br><br>
+                            &lt;h1&gt; Texto escrito con H1 &lt;/h1&gt; <br><br>
+                            &lt;h2&gt; Texto escrito con H2 &lt;/h2&gt; <br><br>
+                            &lt;h3&gt; Texto escrito con H3 &lt;/h3&gt; <br><br>
+                            &lt;h4&gt; Texto escrito con H4 &lt;/h4&gt; <br><br>
+                            &lt;h5&gt; Texto escrito con H5 &lt;/h5&gt; <br><br>
+                            &lt;h6&gt; Texto escrito con H6 &lt;/h6&gt; <br><br>
+                            &lt;/body&gt;<br>
+                            <br>
+                        </p>
+                    </td>
+                    <td> 
+                        <h1> Texto escrito con H1 </h1>
+                        <h2> Texto escrito con H2 </h2>
+                        <h3> Texto escrito con H3 </h3>
+                        <h4> Texto escrito con H4 </h4>
+                        <h5> Texto escrito con H5 </h5>
+                        <h6> Texto escrito con H6 </h6>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <i style="color: #320812; font-size: 22px;"> Etiqueta de parrafos </i><br> <br>
+            La etiqueta &lt;p&gt; en HTML se utiliza para definir un párrafo de texto. Es una de las etiquetas más básicas y comúnmente usadas en HTML, ya que permite organizar el contenido textual en bloques separados y fácilmente legibles. A continuación un ejemplo: <br>
+            <table>
+                <tr>
+                    <td> 
+                        <p class="html"> 
+                            <br>
+                                &lt;body&gt;<br><br>
+                                &lt;p&gt; Este es un parrafo &lt;p&gt; <br><br>
+                                &lt;p&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsum alias? Ut minus ipsa pariatur consequatur labore vel veniam voluptatem. Veniam atque, minus ducimus earum modi optio quia amet. Enim? &lt;/p&gt; <br><br>
+                                &lt;/body&gt;<br>
+                            <br>
+                        </p>
+                    </td>
+                    <td> 
+                        <br>
+                        <p>  Este es un parrafo  </p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsum alias? Ut minus ipsa pariatur consequatur labore vel veniam voluptatem. Veniam atque, minus ducimus earum modi optio quia amet. Enim? </p>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 22px;"> Etiqueta de espacios </i><br> <br>
+            La etiqueta &lt;br&gt; en HTML se utiliza para generar espacios en un párrafo de texto. Es una de las etiquetas más básicas y comúnmente usadas en HTML, ya que permite organizar el contenido textual al separadarar bloques lo que hace que sean fácilmente legibles. A continuación un ejemplo: <br>
+            <table>
+                <tr>
+                    <td> 
+                        <p class="html"> 
+                            <br>
+                                &lt;body&gt;<br><br>
+                                &lt;p&gt; Los siguientes son espacios &lt;p&gt; <br>
+                                &lt;br&gt; <br>
+                                &lt;br&gt; <br>
+                                &lt;p&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsum alias? Ut minus ipsa pariatur consequatur labore vel veniam voluptatem. Veniam atque, minus ducimus earum modi optio quia amet. Enim? &lt;/p&gt; <br><br>
+                                &lt;/body&gt;<br>
+                            <br>
+                        </p>
+                    </td>
+                    <td> 
+                        <br>
+                        <p>  Los siguientes son espacios  </p><br><br>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsum alias? Ut minus ipsa pariatur consequatur labore vel veniam voluptatem. Veniam atque, minus ducimus earum modi optio quia amet. Enim? </p>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 22px;"> Etiqueta de formato de texto </i><br> <br>
+            Las etiquetas de formato de texto en HTML se utilizan para aplicar estilos específicos a partes del contenido textual. Estas etiquetas permiten destacar, enfatizar, o dar estilo a palabras o frases dentro de un documento HTML. A continuación, te presento las más comunes:<br><br>
+            <i style="color: #320812;"> strong </i><br>
+            La etiqueta &lt;strong&gt; se usa para indicar que un texto tiene una gran importancia o debe ser enfatizado de manera significativa. Generalmente, el contenido dentro de una etiqueta &lt;strong&gt; se muestra en negrita.<br><br>
+            <i style="color: #320812;"> b </i><br>
+            La etiqueta &lt;b&gt; se utiliza para destacar texto sin añadir ninguna importancia semántica. Es simplemente un cambio visual para hacer que el texto sea negrita. Estilo por Defecto: El texto dentro de &lt;b&gt; se muestra en negrita.<br><br>
+            <i style="color: #320812;"> i </i><br>
+            La etiqueta &lt;i&gt; se usa para indicar que un texto debe ser resaltado de manera sutil, como por ejemplo para denotar títulos de obras, palabras extranjeras, o nombres científicos. El contenido dentro de &lt;i&gt; se muestra en cursiva.<br><br>
+            <i style="color: #320812;"> em </i><br>
+            La etiqueta &lt;em&gt; se usa para enfatizar un texto. La diferencia con &lt;i&gt; es que &lt;em&gt; tiene un significado semántico, indicando que el texto es enfatizado. El contenido dentro de &lt;em&gt; se muestra en cursiva.<br>
+            <table>
+                <tr>
+                    <td> 
+                        <p class="html"> 
+                            <br>
+                            &lt;p&gt;Este es un &lt;strong&gt;texto importante&lt;/strong&gt;.&lt;/p&gt;<br><br>
+                            &lt;p&gt;Este es un texto en &lt;b&gt;negrita&lt;/b&gt;.&lt;/p&gt;<br><br>
+                            &lt;p&gt;El término &lt;i&gt;carpe diem&lt;/i&gt; es una frase en latín.&lt;/p&gt;<br><br>
+                            &lt;p&gt;Debes &lt;em&gt;prestar atención&lt;/em&gt; a este detalle.&lt;/p&gt;<br><br>
+                            <br>
+                        </p>
+                    </td>
+                    <td> 
+                        <br>
+                        <p>Este es un <strong>texto importante</strong>.</p>
+                        <p>Este es un texto en <b>negrita</b>.</p>
+                        <p>El término <i>carpe diem</i> es una frase en latín.</p>
+                        <p>Debes <em>prestar atención</em> a este detalle.</p>
+                        <br>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 22px;"> Etiqueta de linea horizontal </i><br> <br>
+            La etiqueta &lt;hr&gt; en HTML se utiliza para insertar una línea horizontal en un documento. Esta línea generalmente se usa para separar contenido o secciones dentro de una página web. <br>
+            La etiqueta &lt;hr&gt; se usa para crear una separación visual entre secciones de contenido. Es comúnmente utilizada para dividir temas, indicar un cambio de contexto, o separar bloques de texto. <br>
+            El elemento &lt;hr&gt; genera una línea horizontal que se extiende a lo largo de su contenedor, por lo general, a lo largo del ancho de la página o del contenedor donde se encuentra. Es una etiqueta de autocierre, lo que significa que no necesita una etiqueta de cierre. Solo se escribe como &lt;hr&gt;. A continuación un ejemplo: <br>
+            <table>
+                <tr>
+                    <td> 
+                        <p class="html"> 
+                            <br>
+                                &lt;body&gt;<br><br>
+                                &lt;p&gt; Los siguientes son espacios &lt;p&gt; <br>
+                                &lt;hr&gt; <br>
+                                &lt;p&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsum alias? Ut minus ipsa pariatur consequatur labore vel veniam voluptatem. Veniam atque, minus ducimus earum modi optio quia amet. Enim? &lt;/p&gt; <br><br>
+                                &lt;/body&gt;<br>
+                            <br>
+                        </p>
+                    </td>
+                    <td> 
+                        <br>
+                        <p>  Los siguientes son espacios  </p>
+                        <hr>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsum alias? Ut minus ipsa pariatur consequatur labore vel veniam voluptatem. Veniam atque, minus ducimus earum modi optio quia amet. Enim? </p>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 22px;"> Etiqueta de estructura </i><br> <br>
+            Las etiquetas de estructura en HTML son fundamentales para organizar el contenido de una página web de manera semántica y lógica. Estas etiquetas ayudan a definir la estructura del documento, mejorando la accesibilidad y la comprensión general del contenido tanto por parte de los usuarios como de los motores de búsqueda. A continuación, te presento las principales etiquetas de estructura:<br><br>
+            <i style="color: #320812;"> &lt;header&gt; </i><br>
+            La etiqueta &lt;header&gt; se utiliza para definir un encabezado para un documento o una sección. Este encabezado puede contener logotipos, títulos, menús de navegación, y otros elementos introductorios. Generalmente se coloca al inicio de la página o de una sección.<br><br>
+            <i style="color: #320812;"> &lt;nav&gt; </i><br>
+            La etiqueta &lt;nav&gt; se utiliza para definir un bloque de navegación. Dentro de esta etiqueta se suelen colocar enlaces a otras partes del sitio web, como un menú de navegación. Puede estar dentro de un &lt;header&gt;, en un &lt;aside&gt;, o en cualquier parte de la página donde se necesite un menú de navegación<br><br>
+            <i style="color: #320812;"> &lt;aside&gt; </i><br>
+            La etiqueta &lt;aside&gt; se utiliza para contenido que es tangencial o complementario al contenido principal. Suele utilizarse para barras laterales (sidebars), información adicional, o anuncios.Generalmente se coloca en un lateral de la página, aunque también puede aparecer dentro de un artículo o sección.<br><br>
+            <i style="color: #320812;"> &lt;section&gt; </i><br>
+            La etiqueta &lt;section&gt; se usa para definir secciones o bloques temáticos dentro de un documento. Es útil para agrupar contenido relacionado, como un conjunto de artículos o una parte específica de la página. Puede contener otras etiquetas de estructura como &lt;article&gt;, &lt;aside&gt;, etc.<br><br>
+            <i style="color: #320812;"> &lt;article&gt; </i><br>
+            La etiqueta &lt;article&gt; se utiliza para contenido independiente y autosuficiente que podría ser distribuido o republicado por separado. Esto incluye artículos, entradas de blog, publicaciones en redes sociales, etc. Se ubica dentro de una sección o como parte principal del contenido.<br><br>
+            <i style="color: #320812;"> &lt;footer&gt; </i><br>
+            La etiqueta &lt;footer&gt; se usa para definir el pie de página de un documento o de una sección. El contenido dentro de &lt;footer&gt; suele incluir información de contacto, derechos de autor, enlaces a políticas de privacidad, y similares. Generalmente se ubica al final de la página o de una sección.<br><br>
+            <center><img src="HTML2-1.png" alt="Ejemplo de etiquetas de estructura"><br></center>
+            <table>
+                <tr>
+                    <td>
+                        <img src="HTML2-2.png" alt="Codigo de HTML con etiquetas de estructuras">
+                    </td>
+                    <td>
+                        <img src="HTML2-3.png" alt="Codigo de HTML con etiquetas de estructuras">
+                    </td>
+                </tr>
+            </table>
+                
+        </div>
+
+        <div class="items item5 social">
+            <p>
+                Contactanos: 
+                <a href="https://www.facebook.com/lucy.jimenez.16121471?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Lucy </a>
+                <a href="https://www.instagram.com/_lucyjimenez_?igsh=MWp6OGx5YnV4cjlxMw=="><i class="fa-brands fa-instagram "></i> Lucy </a>
+                <a href="mailto:l20520363@chilpancingo.tecnm.mx"><i class="fa-regular fa-envelope-open "></i> Lucy </a>
+                <a href="https://www.facebook.com/FelixJosue.Bautista?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Félix </a>
+                <a href="https://www.instagram.com/fmk_alguienmas?igsh=MXNtNGswandyNWN6eA=="><i class="fa-brands fa-instagram "></i> Félix</a>
+                <a href="mailto:xilef_osu@hotmail.com"><i class="fa-regular fa-envelope-open "></i> Félix</a>
+            </p>
+            <p style="text-align: right;">
+                Chilpancingo de los bravo, Guerrero. Fecha de creación: 01/09/2024
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

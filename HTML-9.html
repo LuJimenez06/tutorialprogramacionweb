@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos SVG en HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles-2.css">
+    <link rel="stylesheet" href="enlaces.css">
+    <script src="https://kit.fontawesome.com/8b10682772.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="menu">
+            <div class="logo"> <img src="Help-Step.png" /> </div>
+            <a href="index.html">Inicio</a>
+            <a class="active" href="#">Tutoriales HTML</a>
+            <a href="CSS-1.html">Tutoriales CSS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="items item1"> <center> Gráficos SVG  </center> </div>
+        <div class="items item2"> 
+            <a href="HTML-1.html"> 1. Introduccion </a><br>
+            <a href="HTML-2.html"> 2. Etiquetas </a><br> 
+            <a href="HTML-3.html"> 3. Enlaces </a><br> 
+            <a href="HTML-4.html"> 4. Listas </a><br> 
+            <a href="HTML-5.html"> 5. Imagenes </a><br> 
+            <a href="HTML-6.html"> 6. Tablas </a><br> 
+            <a href="HTML-7.html"> 7. Formularios </a><br> 
+            <a href="HTML-8.html"> 8. Audios y Videos </a><br> 
+            <a class="active" href="#"> 9. Gráficos SVG </a><br> 
+        </div>
+        <div class="items item4">
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> SGV (Gráficos Basados en Vectores) </center> </i><br>
+            Podemos imaginar que svg es un plano cartesiano y funcionara como tal, solo tenemos que imaginar que es un rectángulo donde 0,0 se encuentra  en la esquina superior izquierda y los valores de “y” serán positivos, y al verlo asi podemos decir que tiene un límite, este límite podemos modificarlo si queremos hacer un dibujo mas grande, para hacer eso solo agregamos width y height junto a svg. <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Dibujar un circulo con svg </i> <br>
+            Para dibujar un circulo, debemos escribir el siguiente código, en el vemos que con los atributos "stroke" damos contorno al borde y con "stroke-width" definimos el grosor del borde, por ultimo temos a "fil" que define el color de la figura<br>
+            <p class="html"> 
+                &lt;svg width="500" height="500"&gt;<br>
+                    &lt;circle cx="150" cy="150" r="100" stroke="blue" stroke-width="4" fill="Pink"&gt;<br>
+                &lt;/svg&gt;
+            </p>
+            <br>
+            <svg width="500" height="500">
+                <circle cx="150" cy="150" r="100" stroke="blue" stroke-width="4" fill="yellow"/>
+            </svg>
+            <br>
+            <i style="color: #320812;">Dibujar una linea con svg </i> <br>
+            Para dibujar una linea, debemos escribir el siguiente código, x1 y y1 son las coordenadas del primer punto y x2 y y2 son las coordenadas del segundo punto<br>
+            <p class="html"> 
+                &lt;svg width="500" height="500"&gt;<br>
+                &lt;circle cx="150" cy="150" r="100" stroke="blue" stroke-width="4" fill="Pink"&gt;<br>    
+                &lt;line x1="150" y1="150" x2="250" y2="150" stroke="blue" stroke-width="4"/&gt;<br>
+                &lt;/svg&gt;
+            </p>
+            <br>
+            <svg width="500" height="500">
+                <circle cx="150" cy="150" r="100" stroke="blue" stroke-width="4" fill="yellow"/>
+                <line x1="150" y1="150" x2="250" y2="150" stroke="blue" stroke-width="4" />
+            </svg>
+            <br>
+            <i style="color: #320812;">Dibujar texto con svg </i> <br>
+            Para dibujar un texto, debemos escribir el siguiente código<br>
+            <p class="html"> 
+                &lt;svg width="500" height="500"&gt;<br>
+                &lt;circle cx="150" cy="150" r="100" stroke="blue" stroke-width="4" fill="Pink"&gt;<br>    
+                &lt;line x1="150" y1="150" x2="250" y2="150" stroke="blue" stroke-width="4"/&gt;<br>
+                &lt;text x="150" y="150" fill="red"&gt;r=100&lt;text&gt;
+                &lt;/svg&gt;
+            </p>
+            <br>
+            <svg width="500" height="500">
+                <circle cx="150" cy="150" r="100" stroke="blue" stroke-width="4" fill="yellow"/>
+                <line x1="150" y1="150" x2="250" y2="150" stroke="blue" stroke-width="4"/>
+                <text x="150" y="150" fill="red">r=100<text/>
+            </svg>
+            <br>
+            <i style="color: #320812;">Polyline </i> <br>
+            La diferencia entre line y polyline es que con esta etiqueta podemos seguir poniendo puntos y nos va a cerrar el dibujo, por asi decirlo, y si quisiéramos cambiar el color de fondo podemos utilizar fill<br>
+            <p class="html"> 
+                &lt;svg width="500" height="500"&gt;<br>
+                &lt;polyline points="0,40 40,40 40,0 80,0 80,80" stroke="blue" stroke-width="4" &gt;<br>
+                &lt;/svg&gt;
+            </p>
+            <br>
+            <svg width="500" height="500">
+                <polyline points="0,40 40,40 40,0 80,0 80,80" stroke="blue" stroke-width="4"/>
+            </svg>
+            <br>
+            <i style="color: #320812;">Path </i> <br>
+            Para utilizar path tenemos que tener en claro que los 2 primeros números representan las coordenadas del punto de inicio, mientras que de los 2 finales representa el punto final, y los del centro son las de la curva que tendrá nuestra línea<br>
+            <p class="html"> 
+                &lt;svg width="500" height="500"&gt;<br>
+                &lt;circle cx="100" cy="350" r="3" &gt;<br>
+                &lt;circle cx="250" cy="50" r="3" &gt;<br>
+                &lt;text x="100" y="350" dx="-20"&gt;A&lt;/text&gt;
+                &lt;text x="250" y="50" dx="10"&gt;B&lt;/text&gt;<br>
+                &lt;path d="M 100 350 Q 88 -25 250 -58 stroke-width="5" fill="none"&gt;&lt;/path&gt;<br>
+                &lt;/svg&gt;
+            </p>
+            <br>
+            <svg width="500" height="500">
+                <circle cx="100" cy="350" r="3" />
+                <circle cx="250" cy="50" r="3" />
+                <text x="100" y="350" dx="-20">A</text>
+                <text x="250" y="50" dx="10">B</text>
+                <path d="M 100 350 Q 175 50 250 50" stroke="blue" stroke-width="4"
+                fill="none"></path>
+            </svg>                
+            <br>
+            <i style="color: #320812;">Imagenes SVG</i> <br>
+            Si queremos hacer un dibujo más elaborado, podemos utilizar Photoshop y exportarlo como SVG, o buscar algún icono o dibujo y descargarlo como SVG y simplemente pegarlo en nuestro código. Una página que nos da esa opción es <a href="https://www.flaticon.com/" target="_blank">Flaticon</a> y de esta forma podemos cambiar los colores de cada línea o modificarlo sin perder calidad del dibujo porque estamos trabajando con vectores.<br>
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512">
+                    <path d="M18,8.5A2.5,2.5,0,1,1,15.5,6,2.5,2.5,0,0,1,18,8.5Zm-1.341,9.213a11.038,11.038,0,0,1-.828,2.222A7.634,7.634,0,0,1,9,24H8V19.143A3.214,3.214,0,0,0,4.857,16H0V15A7.634,7.634,0,0,1,4.065,8.169a11.038,11.038,0,0,1,2.222-.828C9.96,2.38,14.221.178,20.458,0H20.5A3.489,3.489,0,0,1,24,3.551C23.82,9.877,21.686,14,16.659,17.713ZM21,3.508A.5.5,0,0,0,20.515,3c-5.461.162-8.839,1.966-12.038,6.431a28.441,28.441,0,0,0-2.206,3.737,6.287,6.287,0,0,1,4.561,4.561,28.376,28.376,0,0,0,3.737-2.206C19.042,12.317,20.846,8.949,21,3.508ZM1.631,18.728C.857,19.5.38,21.831.211,22.8L0,24l1.2-.212c.961-.17,3.278-.649,4.052-1.425a2.58,2.58,0,0,0,0-3.635A2.613,2.613,0,0,0,1.631,18.728Z"/>
+                </svg>               
+            <br>
+            <br>
+        </div>
+        <div class="items item5 social">
+            <p>
+                Contactanos: 
+                <a href="https://www.facebook.com/lucy.jimenez.16121471?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Lucy </a>
+                <a href="https://www.instagram.com/_lucyjimenez_?igsh=MWp6OGx5YnV4cjlxMw=="><i class="fa-brands fa-instagram "></i> Lucy </a>
+                <a href="mailto:l20520363@chilpancingo.tecnm.mx"><i class="fa-regular fa-envelope-open "></i> Lucy </a>
+                <a href="https://www.facebook.com/FelixJosue.Bautista?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Félix </a>
+                <a href="https://www.instagram.com/fmk_alguienmas?igsh=MXNtNGswandyNWN6eA=="><i class="fa-brands fa-instagram "></i> Félix</a>
+                <a href="mailto:xilef_osu@hotmail.com"><i class="fa-regular fa-envelope-open "></i> Félix</a>
+            </p>
+            <p style="text-align: right;">
+                Chilpancingo de los bravo, Guerrero. Fecha de creación: 01/09/2024
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

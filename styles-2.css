@@ -1,0 +1,43 @@
+p.html{
+    background-color: black;
+    color: lime;
+    padding: 10px 30px;
+    text-align: left;
+}
+
+p.css{
+    background-color: black;
+    color: lightblue;
+    padding: 10px 30px;
+    text-align: left;
+}
+
+.item2 a{
+    text-decoration: none;
+    color: #001b41;
+    padding: 0px 10px;
+}
+
+.item2 a:hover{
+    background-color: #001b41;
+    color: white;
+}
+
+.item2 a.active{
+    color: white;
+}
+
+
+
+.item2 a.desactive:hover{
+    color: rgb(255, 0, 0);
+    background-color: hsla(301, 100%, 11%, 0.904);
+    border: 2px solid #001b41;
+}
+
+.imagen {
+    max-width: 100%; /* ajusta la imagen al ancho máximo del contenedor */
+    height: auto; /* asegura que la altura se ajuste proporcionalmente */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

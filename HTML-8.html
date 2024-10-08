@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiso y Videos en HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles-2.css">
+    <link rel="stylesheet" href="enlaces.css">
+    <script src="https://kit.fontawesome.com/8b10682772.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="menu">
+            <div class="logo"> <img src="Help-Step.png" /> </div>
+            <a href="index.html">Inicio</a>
+            <a class="active" href="#">Tutoriales HTML</a>
+            <a href="CSS-1.html">Tutoriales CSS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="items item1"> <center> Audios y Videos </center> </div>
+        <div class="items item2"> 
+            <a href="HTML-1.html"> 1. Introduccion </a><br>
+            <a href="HTML-2.html"> 2. Etiquetas </a><br> 
+            <a href="HTML-3.html"> 3. Enlaces </a><br> 
+            <a href="HTML-4.html"> 4. Listas </a><br> 
+            <a href="HTML-5.html"> 5. Imagenes </a><br> 
+            <a href="HTML-6.html"> 6. Tablas </a><br> 
+            <a href="HTML-7.html"> 7. Formularios </a><br> 
+            <a class="active" href="#"> 8. Audios y Videos </a><br> 
+            <a href="HTML-9.html"> 9. Gráficos SVG </a><br> 
+        </div>
+        <div class="items item4">
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Audios y Videos </center> </i><br>
+            En HTML, los elementos de audio y video se utilizan para integrar contenido multimedia en una página web:<br><br>
+            Audio &lt;audio&gt;: Permite reproducir archivos de sonido o música directamente en la página web. Puede incluir controles como reproducir, pausar y ajustar el volumen.<br><br>
+            Video &lt;video&gt;: Permite incrustar y reproducir videos dentro de una página web. Al igual que el audio, puede incluir controles como reproducir, pausar, y ajustar el volumen, además de opciones para pantalla completa.<br><br>
+            Estos elementos enriquecen la experiencia del usuario al permitir la inclusión de medios interactivos y dinámicos sin necesidad de plugins externos.
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;"> Audio </i> <br>
+            Para agregar audio a nuestra página web con HTML tenemos 2 opciones principales:<br>
+            <p class="html">
+                &lt;audio src="imgfel/Atenea-musica.mp3" controls&gt;&lt;/audio&gt;
+                <br>
+            </p>
+            <audio src="imgfel/Atenea-musica.mp3" controls></audio>
+            <br><br>
+            <p class="html">
+                &lt;audio controls&gt;<br>
+                &lt;source src="imgfel/Atenea-musica.mp3" type="mp3"&gt;<br>
+                &lt;/audio&gt;
+            </p>
+            <audio controls>
+                <source src="imgfel/Atenea-musica.mp3" type="mp3">
+            </audio>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Seguridad en el Audio </i> <br>
+            Para cuidar que el audio pueda reproducirse sin problemas, podemos agregar la siguiente línea de código que lo que hará será poner otro tipo de audio para que si nuestro navegador no pudiera reproducir el audio con .mp3 tenga la otra extensión y si en dado caso aun no pudiera mostrará el siguiente mensaje: <br>
+            <p class="html"> 
+                &lt;audio controls&gt;<br>
+                &lt;source src="imgfel/Atenea-musica.mp3" type="mp3"&gt;<br>
+                &lt;source src="imgfel/Atenea-musica.ogg" type="ogg"&gt;<br>
+                El navegador no pudo reproducir el audio.<br>
+                &lt;/audio&gt;
+            </p>
+                <audio controls>
+                    <source src="imgfel/Atenea-musica.mp3" type="mp3">
+                    <source src="imgfel/Atenea-musica.ogg" type="ogg">
+                </audio>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Autoplay<br> 
+            </i>Ahora, si quisiéramos que al entrar a la pagina se reproduzca nuestro audio, podemos agregar la siguiente etiqueta: autoplay
+            <br>
+            <p class="html"> 
+                &lt;audio controls autoplay&gt;<br>
+                &lt;source src="imgfel/Atenea-musica.mp3" type="mp3"&gt;
+                &lt;source src="imgfel/Atenea-musica.ogg" type="ogg"&gt;
+                El navegador no pudo reproducir el audio.
+                &lt;/audio&gt;
+            </p>
+            <br>
+            <i style="color: #320812;">Muted<br> 
+            </i>Y si lo que queremos es que comience a reproducir el audio pero sin volumen, agregamos lo siguiente: muted
+            <br>
+            <p class="html"> 
+                &lt;audio controls autoplay muted&gt;<br>
+                &lt;source src="imgfel/Atenea-musica.mp3" type="mp3"&gt;
+                &lt;source src="imgfel/Atenea-musica.ogg" type="ogg"&gt;
+                El navegador no pudo reproducir el audio.
+                &lt;/audio&gt;
+            </p>
+            <br>
+            <i style="color: #320812;">Loop<br> 
+            </i>Por último, si lo que buscamos es que nuestro audio siga reproduciéndose después de terminar, solo debemos ocupar: loop
+            <br>
+            <p class="html"> 
+                &lt;audio controls autoplay muted loop&gt;<br>
+                &lt;source src="imgfel/Atenea-musica.mp3" type="mp3"&gt;
+                &lt;source src="imgfel/Atenea-musica.ogg" type="ogg"&gt;
+                El navegador no pudo reproducir el audio.
+                &lt;/audio&gt;
+            </p>
+            <br>
+            <audio controls autoplay muted>
+                <source src="imgfel/Atenea-musica.mp3" type="mp3">
+                El navegador no pudo reproducir el audio.
+            </audio>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;"> Video </i> <br>
+            Para agregar un video a nuestra pagina HTML, no es muy diferente a como agregamos audio porque comparten muchas características, podemos hacerlo de 2 formas como con el audio, pero es importante mencionar que aqui podemos modificar las dimensiones para ajustar nuestro video a la página<br>
+            <p class="html">
+                &lt;video src="imgfel/video.mp4" controls width="320" height="180"&gt;&lt;/video&gt;
+                <br>
+            </p>
+            <p class="html">
+                &lt;video controls width="320" height="180&gt;<br>
+                &lt;source src="imgfel/video.mp4" type="mp4"&gt;<br>
+                &lt;/video&gt;
+            </p>
+            <video src="imgfel/video.mp4" controls style="width: 320px; height: 180px;"></video>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Seguridad en el Video </i> <br>
+            Podemos agregar otra extensión a nuestro video o algún texto por si el primero no llegara a reproducirse por diferentes situaciones: <br>
+            <p class="html"> 
+                &lt;video controls width="320"; height="180";&gt;<br>
+                &lt;source src="imgfel/video.mp" type="mp4"&gt;<br>
+                &lt;source src="imgfel/video.wav" type="wav"&gt;<br>
+                El navegador no pudo reproducir el video.<br>
+                &lt;/video&gt;
+            </p>
+            <video controls width="320" height="180">
+                <source src="imgfel/video.mp4" type="video/mp4">
+                El navegador no pudo reproducir el video.
+            </video>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Autoplay, Loop y Muted<br> </i>Y también podemos utilizar autoplay, loop y muted para que se reproduzca en automático, en ciclo, y comience en silencio, respectivamente 
+            <br>
+            <p class="html"> 
+                &lt;video src="imgfel/video.mp4" controls autoplay loop muted width="320" height="180"&gt;&lt;/video&gt;
+            </p>
+            <video src="imgfel/video.mp4" controls autoplay loop muted style="width: 320px; height: 180px;"></video>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Video de Youtube<br> </i>Si el video es de Youtube, podemos ir al video y darle en el botón compartir y después darle en el botón incorporar y copiar el enlace que nos da y finalmente pegarlo en nuestro código: 
+            <br>
+            <br>
+            <img src="imgfel/captura.PNG" width="419" height="449" alt="Captura de pantalla de Youtube"/>
+            <br>
+            <img src="imgfel/captura2.PNG" width="975" height="267" alt="Captura de pantalla de youtube"/>
+            <br>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nMmrtgbFmOg?si=gRpLkndUTY8AD_Pf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="items item5 social">
+            <p>
+                Contactanos: 
+                <a href="https://www.facebook.com/lucy.jimenez.16121471?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Lucy </a>
+                <a href="https://www.instagram.com/_lucyjimenez_?igsh=MWp6OGx5YnV4cjlxMw=="><i class="fa-brands fa-instagram "></i> Lucy </a>
+                <a href="mailto:l20520363@chilpancingo.tecnm.mx"><i class="fa-regular fa-envelope-open "></i> Lucy </a>
+                <a href="https://www.facebook.com/FelixJosue.Bautista?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Félix </a>
+                <a href="https://www.instagram.com/fmk_alguienmas?igsh=MXNtNGswandyNWN6eA=="><i class="fa-brands fa-instagram "></i> Félix</a>
+                <a href="mailto:xilef_osu@hotmail.com"><i class="fa-regular fa-envelope-open "></i> Félix</a>
+            </p>
+            <p style="text-align: right;">
+                Chilpancingo de los bravo, Guerrero. Fecha de creación: 01/09/2024
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

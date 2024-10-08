@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation en CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles-2.css">
+    <link rel="stylesheet" href="enlaces.css">
+    <link rel="stylesheet" href="animation.css">
+    <script src="https://kit.fontawesome.com/8b10682772.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="menu">
+            <div class="logo"> <img src="Help-Step.png" /> </div>
+            <a href="index.html">Inicio</a>
+            <a href="HTML-1.html">Tutoriales HTML</a>
+            <a class="active" href="#">Tutoriales CSS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="items item1"> <center> Animation en CSS </center> </div>
+        <div class="items item2"> 
+            <a href="CSS-1.html"> 1. Introduccion </a><br>
+            <a href="CSS-2.html"> 2. Colores </a><br>
+            <a href="CSS-3.html"> 3. Texto </a><br>
+            <a href="CSS-4.html"> 4. Medidas </a><br>
+            <a href="CSS-5.html"> 5. Modelo de caja </a><br>
+            <a href="CSS-6.html"> 6. Estilos de enlace </a><br>
+            <a href="CSS-7.html"> 7. Posición </a><br>
+            <a href="CSS-8.html"> 8. Imagenes </a><br>
+            <a href="CSS-9.html"> 9. Transiciones </a><br>
+            <a href="CSS-10.html"> 10. Transform </a><br>
+            <a class="active" href="#"> 11. Animation </a><br>
+            <a href="CSS-12.html"> 12. Flexbox </a><br>
+            <a href="CSS-13.html"> 13. GRID </a><br>
+            <a href="CSS-14.html"> 14. QUERY </a><br>
+        </div>
+        <div class="items item4">
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Animation en CSS </center> </i><br>
+            Las animaciones en CSS permiten cambiar de forma dinámica las propiedades de los elementos a lo largo del tiempo. Estas pueden ser usadas para crear transiciones suaves, interactivas y atractivas en las páginas web. <br><br>
+
+            <i style="color: #320812;">animation </i> <br>
+            La propiedad animation es un atajo que combina varias propiedades de animación, como animation-name, animation-duration, animation-timing-function, y más. Definirlas correctamente permite personalizar cómo los elementos cambian su apariencia o comportamiento a lo largo del tiempo.
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; margin: 30px; <br>
+                    &emsp; width: 120px; <br>
+                    &emsp; height: 120px; <br>
+                    &emsp; background-color: red; <br>
+                    &emsp; border-radius: 50%; <br>
+                    &emsp; animation: bounce 2s ease-in-out infinite; <br>
+                } <br> <br>
+            </p>
+            Este ejemplo aplica una animación llamada bounce, que tiene una duración de 2 segundos, una curva de tiempo ease-in-out, y se repite indefinidamente.<br>
+            <br>
+
+            <i style="color: #320812;">@keyframes </i> <br>
+            La regla @keyframes define el conjunto de estilos en diferentes puntos de la animación. Usando porcentajes o palabras clave (from, to), puedes definir el estado inicial, final y cualquier otro punto intermedio.
+            <p class="css"> <br>
+                @keyframes bounce { <br>
+                    &emsp; 0% { transform: translateY(0); } <br>
+                    &emsp; 50% { transform: translateY(-100px); } <br>
+                    &emsp; 100% { transform: translateY(0); } <br>
+                } <br> <br>
+            </p>
+            <br>
+            <div class="pelota"></div>
+            <br>
+            <br>
+
+            <i style="color: #320812;">animation-name </i> <br>
+            Define el nombre de la animación que deseas aplicar al elemento. El nombre debe coincidir con el de los @keyframes.
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; animation-name: bounce; <br>
+                } <br> <br>
+            </p><br>
+
+            <i style="color: #320812;">animation-duration </i> <br>
+            Especifica la duración de la animación. Se puede definir en segundos (s) o milisegundos (ms).
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; animation-duration: 2s; <br>
+                } <br> <br>
+            </p><br>
+
+            <i style="color: #320812;">animation-delay </i> <br>
+            Define el tiempo de espera antes de que la animación comience. Puede ser positivo o negativo (un valor negativo adelanta la animación).
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; animation-delay: 1s; <br>
+                } <br> <br>
+            </p><br>
+            
+            <i style="color: #320812;">animation-iteration-count </i> <br>
+            Especifica cuántas veces se repite la animación. Puede ser un número (ejemplo: 3) o infinite para que se repita indefinidamente.
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; animation-iteration-count: infinite; <br>
+                } <br> <br>
+            </p><br>
+
+            <i style="color: #320812;">animation-direction </i> <br>
+            Define la dirección de la animación. Los valores comunes incluyen:
+            <ul>
+                <li>normal: La animación se ejecuta en la dirección definida en los keyframes (por defecto).</li>
+                <li>reverse: La animación se ejecuta en sentido inverso.</li>
+                <li>alternate: La animación se alterna entre el sentido normal y el inverso en cada ciclo.</li>
+                <li>alternate-reverse: Alterna la dirección, comenzando por el inverso.</li>
+            </ul>
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; animation-direction: alternate; <br>
+                } <br> <br>
+            </p><br>
+
+            <i style="color: #320812;">animation-timing-function </i> <br>
+            Controla la velocidad de la animación durante su duración. Los valores comunes incluyen:
+            <ul>
+                <li>ease (valor por defecto)</li>
+                <li>ease-in</li>
+                <li>ease-out</li>
+                <li>ease-in-out</li>
+                <li>linear</li>
+                <li>cubic-bezier(n, n, n, n): Permite crear una curva de velocidad personalizada.</li>
+            </ul>
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; animation-timing-function: ease-in-out; <br>
+                } <br> <br>
+            </p><br>
+
+            <i style="color: #320812;">animation-fill-mode </i> <br>
+            Define cómo se aplican los estilos de la animación antes de que comience o después de que termine. Los valores son:
+            <ul>
+                <li>none: No aplica ningún estilo extra (por defecto).</li>
+                <li>forwards: Mantiene los estilos finales de la animación.</li>
+                <li>backwards: Aplica los estilos del primer frame durante el tiempo de delay.</li>
+                <li>both: Aplica los estilos tanto al principio como al final de la animación.</li>
+            </ul>
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; animation-fill-mode: forwards; <br>
+                } <br> <br>
+            </p><br>
+
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Codigo CSS </i> <br>
+            El codigo de ejemplo <br>
+            <div class="imagen">
+                <img src="imgfel/CSS11-1.png" />
+                <img src="imgfel/CSS11-2.png" />
+            </div>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Codigo HTML </i> <br>
+            El codigo de ejemplo <br>
+            <div class="imagen">
+                <img src="imgfel/CSS11-3.png" />
+            </div>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Pagina Web </i> <br>
+            Resultado <br>
+            <div class="imagen">
+                <img src="imgfel/CSS11-4.png" />
+            </div>
+            <br>
+        </div>
+        <div class="items item5 social">
+            <p>
+                Contactanos: 
+                <a href="https://www.facebook.com/lucy.jimenez.16121471?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Lucy </a>
+                <a href="https://www.instagram.com/_lucyjimenez_?igsh=MWp6OGx5YnV4cjlxMw=="><i class="fa-brands fa-instagram "></i> Lucy </a>
+                <a href="mailto:l20520363@chilpancingo.tecnm.mx"><i class="fa-regular fa-envelope-open "></i> Lucy </a>
+                <a href="https://www.facebook.com/FelixJosue.Bautista?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Félix </a>
+                <a href="https://www.instagram.com/fmk_alguienmas?igsh=MXNtNGswandyNWN6eA=="><i class="fa-brands fa-instagram "></i> Félix</a>
+                <a href="mailto:xilef_osu@hotmail.com"><i class="fa-regular fa-envelope-open "></i> Félix</a>
+            </p>
+            <p style="text-align: right;">
+                Chilpancingo de los bravo, Guerrero. Fecha de creación: 01/09/2024
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

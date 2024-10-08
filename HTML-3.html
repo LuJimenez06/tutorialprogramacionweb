@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces de HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles-2.css">
+    <link rel="stylesheet" href="enlaces.css">
+    <script src="https://kit.fontawesome.com/8b10682772.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="menu">
+            <div class="logo"> <img src="Help-Step.png" /> </div>
+            <a href="index.html">Inicio</a>
+            <a class="active" href="#">Tutoriales HTML</a>
+            <a href="CSS-1.html">Tutoriales CSS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="items item1" id="inicio"> <center> Enlaces </center> </div>
+        <div class="items item2"> 
+            <a href="HTML-1.html"> 1. Introduccion </a><br>
+            <a href="HTML-2.html"> 2. Etiquetas </a><br> 
+            <a class="active" href="#"> 3. Enlaces </a><br> 
+            <a href="HTML-4.html"> 4. Listas </a><br> 
+            <a href="HTML-5.html"> 5. Imagenes </a><br> 
+            <a href="HTML-6.html"> 6. Tablas </a><br> 
+            <a href="HTML-7.html"> 7. Formularios </a><br> 
+            <a href="HTML-8.html"> 8. Audios y Videos </a><br> 
+            <a href="HTML-9.html"> 9. Gráficos SVG </a><br> 
+        </div>
+        <div class="items item4">
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Enlaces de HTML </center> </i><br>
+            Los enlaces en HTML son fundamentales para la navegación en la web, ya que permiten conectar diferentes páginas o recursos dentro de un sitio web, así como dirigir a los usuarios a sitios externos. La etiqueta principal utilizada para crear enlaces es &lt;a&gt;, que significa "anchor" (ancla). A continuación, te doy una explicación detallada sobre los enlaces en HTML. <br>
+            La etiqueta &lt;a&gt; se usa para crear un enlace, que puede apuntar a otra página web, un archivo, una sección específica de la misma página, o incluso iniciar una llamada telefónica o enviar un correo electrónico. Para que el enlace no te envie a ningún lugar se pone el numeral o gato como valor en el atributo href. href="#"<br>
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Atributo href y tipos de enlaces </center> </i><br>
+            El atributo href (hypertext reference) es el más importante dentro de la etiqueta &lt;a&gt;. Define la URL del destino al que llevará el enlace. <br><br>
+            <i style="color: #320812; font-size: 22px;"> Enlaces a páginas externas </i><br>
+            Son las que dirigen a páginas que no pertenecen al mismo dominio. Para que funcione correctamente el enlace se tiene que poner completo, sin omitir el "http://wwww" o el "https://www"  <br><br>
+            <i style="color: #320812; font-size: 22px;"> Enlaces a páginas internas </i><br>
+            Son las que dirigen a páginas que pertenecen al mismo sitio web. Si quieres hacer un enlace a un archivo que se encuentra en una carpeta se pone asi: href="(nombre de la carpeta)/(nombre del archivo)" <br><br>
+            <i style="color: #320812; font-size: 22px;"> Enlaces a secciones especificas de la misma página </i><br>
+            Son las que dirigen a secciones especificas que utiliza un identificador (ID) para saltar a una parte específica de la misma página. Se usa la configuracion &lt;i id="seccion"&gt;<i id="seccion"> sección especifica </i>&lt;/i&gt; <br><br>
+            <i style="color: #320812; font-size: 22px;"> Enlaces para enviar correos electrónicos </i><br>
+            Son las que dirigen al correo electrónico. Utiliza el esquema mailto: para abrir el cliente de correo electrónico predeterminado del usuario. <br><br>
+            <i style="color: #320812; font-size: 22px;"> Enlaces para llamadas telefónicas </i><br>
+            Son las que dirigen a la llamada. Utiliza el esquema tel: para iniciar una llamada en dispositivos móviles. <br><br>
+
+            <table>
+                <tr>
+                    <td>
+                        <p class="html">
+                            <br>
+                            &lt;a href="https://www.youtube.com/"&gt; Youtube &lt;/a&gt;
+                            <br><br>
+                        </p>
+                    </td>
+                    <td>
+                        <br><br>
+                        <a href="https://www.youtube.com/"> Youtube </a>
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="html">
+                            <br>
+                            &lt;a href="Inicio.html"&gt; Inicio &lt;/a&gt;
+                            <br><br>
+                        </p>
+                    </td>
+                    <td>
+                        <br><br>
+                        <a href="Inicio.html"> Inicio </a>
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="html">
+                            <br>
+                            &lt;a href="#seccion"&gt; Ir a sección &lt;/a&gt;<br>
+                            &lt;a href="#inicio"&gt; Ir a l inicio de la página &lt;/a&gt;<br>
+                            <br><br>
+                        </p>
+                    </td>
+                    <td>
+                        <br><br>
+                        <a href="#seccion"> Ir a sección </a><br>
+                        <a href="#inicio"> Ir a Inicio de la página </a>
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="html">
+                            <br>
+                            &lt;a href="mailto:dcd@chilpancingo.tecnm.mx"&gt; Enviar un correo electrónico &lt;/a&gt;
+                            <br><br>
+                        </p>
+                    </td>
+                    <td>
+                        <br><br>
+                        <a href="mailto:dcd@chilpancingo.tecnm.mx"> Enviar un correo electrónico </a>
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="html">
+                            <br>
+                            &lt;a href="tel:747 454 1300"&gt; Hace una llamada telefónica &lt;/a&gt;
+                            <br><br>
+                        </p>
+                    </td>
+                    <td>
+                        <br><br>
+                        <a href="tel:747 454 1300"> Hace una llamada telefónica </a>
+                        <br><br>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Atributo target </center> </i><br>
+            El atributo target se usa para definir dónde se abrirá el enlace.<br>
+            <ul>
+                <li> _self: Abre el enlace en la misma pestaña o ventana. Es el valor predeterminado. </li>
+                <li> _blank: Abre el enlace en una nueva pestaña o ventana. </li>
+            </ul>
+            <table>
+                <tr>
+                    <td>
+                        <p class="html">
+                            <br>
+                            &lt;a href="https://www.youtube.com/" target="_blank"&gt; Abrir en una nueva pestaña &lt;/a&gt;
+                            <br><br>
+                        </p>
+                    </td>
+                    <td>
+                        <br><br>
+                        <a href="https://www.youtube.com/" target="_blank"> Abrir en una nueva pestaña </a>
+                        <br><br>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Atributo rel </center> </i><br>
+            El atributo rel define la relación entre la página actual y la página a la que apunta el enlace. rel="noopener noreferrer": Se usa junto con target="_blank" para mejorar la seguridad y el rendimiento. <br><br>
+            <table>
+                <tr>
+                    <td>
+                        <p class="html">
+                            <br>
+                            &lt;a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"&gt; Enlace seguro &lt;/a&gt;
+                            <br><br>
+                        </p>
+                    </td>
+                    <td>
+                        <br><br>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"> Enlace seguro </a>
+                        <br><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="items item5 social">
+            <p>
+                Contactanos: 
+                <a href="https://www.facebook.com/lucy.jimenez.16121471?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Lucy </a>
+                <a href="https://www.instagram.com/_lucyjimenez_?igsh=MWp6OGx5YnV4cjlxMw=="><i class="fa-brands fa-instagram "></i> Lucy </a>
+                <a href="mailto:l20520363@chilpancingo.tecnm.mx"><i class="fa-regular fa-envelope-open "></i> Lucy </a>
+                <a href="https://www.facebook.com/FelixJosue.Bautista?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Félix </a>
+                <a href="https://www.instagram.com/fmk_alguienmas?igsh=MXNtNGswandyNWN6eA=="><i class="fa-brands fa-instagram "></i> Félix</a>
+                <a href="mailto:xilef_osu@hotmail.com"><i class="fa-regular fa-envelope-open "></i> Félix</a>
+            </p>
+            <p style="text-align: right;">
+                Chilpancingo de los bravo, Guerrero. Fecha de creación: 01/09/2024
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform en CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles-2.css">
+    <link rel="stylesheet" href="enlaces.css">
+    <script src="https://kit.fontawesome.com/8b10682772.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="menu">
+            <div class="logo"> <img src="Help-Step.png" /> </div>
+            <a href="index.html">Inicio</a>
+            <a href="HTML-1.html">Tutoriales HTML</a>
+            <a class="active" href="#">Tutoriales CSS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="items item1"> <center> Transform en CSS </center> </div>
+        <div class="items item2"> 
+            <a href="CSS-1.html"> 1. Introduccion </a><br>
+            <a href="CSS-2.html"> 2. Colores </a><br>
+            <a href="CSS-3.html"> 3. Texto </a><br>
+            <a href="CSS-4.html"> 4. Medidas </a><br>
+            <a href="CSS-5.html"> 5. Modelo de caja </a><br>
+            <a href="CSS-6.html"> 6. Estilos de enlace </a><br>
+            <a href="CSS-7.html"> 7. Posición </a><br>
+            <a href="CSS-8.html"> 8. Imagenes </a><br>
+            <a href="CSS-9.html"> 9. Transiciones </a><br>
+            <a class="active" href="#"> 10. Transform </a><br>
+            <a href="CSS-11.html"> 11. Animation </a><br>
+            <a href="CSS-12.html"> 12. Flexbox </a><br>
+            <a href="CSS-13.html"> 13. GRID </a><br>
+            <a href="CSS-14.html"> 14. QUERY </a><br>
+        </div>
+        <div class="items item4">
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Transform en CSS </center> </i><br>
+            Las transformaciones en CSS permiten cambiar la apariencia y posición de un elemento sin alterar su flujo en el documento. Con la propiedad transform, puedes aplicar varias transformaciones visuales, como traslaciones, rotaciones, escalados y sesgados, tanto en 2D como en 3D. <br><br>
+
+            <i style="color: #320812;">transform </i> <br>
+            La propiedad transform es la clave para realizar las transformaciones de un elemento. Se utiliza para aplicar una o varias transformaciones como translate, rotate, scale, etc.
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; transform: translateX(100px) rotate(45deg); <br>
+                } <br> <br>
+            </p><br>
+
+            <i style="color: #320812;">transform-origin </i> <br>
+            Define el punto de origen para la transformación de un elemento. Por defecto, este origen está centrado en el elemento (50% 50%), pero puedes cambiarlo.
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; transform-origin: top left; <br>
+                } <br> <br>
+            </p>
+            Esto moverá el punto de rotación o escalado al borde superior izquierdo del elemento. <br>
+            <br>
+
+            <i style="color: #320812;">perspective </i> <br>
+            perspective se utiliza para crear una ilusión de profundidad en transformaciones 3D, definiendo qué tan cerca o lejos está el punto de vista. Se suele aplicar al contenedor que alberga los elementos que serán transformados en 3D.
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; perspective: 1000px; <br>
+                } <br> <br>
+            </p><br>
+
+            <i style="color: #320812; font-size: 26px;">Funciones 2D </i> <br>
+            Estas funciones permiten aplicar transformaciones en un plano bidimensional. <br><br>
+            <i style="color: #320812;">translate() </i> <br>
+            Desplaza el elemento en los ejes X e Y. Los valores positivos mueven el elemento hacia la derecha o abajo, y los negativos, hacia la izquierda o arriba.
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; transform: translate(50px, 100px); <br>
+                } <br> <br>
+            </p><br>
+            <i style="color: #320812;">rotate() </i> <br>
+            Rota el elemento alrededor de su punto de origen. El valor es el ángulo en grados.
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; transform: rotate(45deg); <br>
+                } <br> <br>
+            </p><br>
+            <i style="color: #320812;">scale() </i> <br>
+            Escala el tamaño del elemento. Los valores menores que 1 lo reducen, y mayores que 1 lo aumentan.
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; transform: scale(1.5); <br>
+                } <br> <br>
+            </p><br>
+            <i style="color: #320812;">skew() </i> <br>
+            Sesga o inclina el elemento en el eje X o Y.
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; transform: skew(20deg, 10deg); <br>
+                } <br> <br>
+            </p><br>
+            <i style="color: #320812;">matrix() </i> <br>
+            Es la función más compleja de transformaciones 2D y permite combinar todas las anteriores en una sola matriz de transformación.
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; transform: matrix(1, 0.5, 0.5, 1, 10, 20); <br>
+                } <br> <br>
+            </p><br>
+            <br>
+            <i style="color: #320812; font-size: 26px;">Funciones 3D </i> <br>
+            Las transformaciones 3D permiten dar profundidad y rotar los elementos en tres dimensiones. <br><br>
+            <i style="color: #320812;">rotateX() </i> <br>
+            Rota el elemento alrededor del eje X (horizontal).
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; transform: rotateX(45deg); <br>
+                } <br> <br>
+            </p><br>
+            <i style="color: #320812;">rotateY()) </i> <br>
+            Rota el elemento alrededor del eje Y (vertical).
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; transform: rotateY(45deg); <br>
+                } <br> <br>
+            </p><br>
+            <i style="color: #320812;">rotateZ() </i> <br>
+            Rota el elemento alrededor del eje Z (similar a rotate() en 2D).
+            <p class="css"> <br>
+                .element { <br>
+                    &emsp; transform: rotateZ(45deg); <br>
+                } <br> <br>
+            </p><br>
+
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Codigo CSS </i> <br>
+            El codigo de ejemplo <br>
+            <div class="imagen">
+                <img src="imgfel/CSS10-1.png" />
+                <img src="imgfel/CSS10-2.png" />
+            </div>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Codigo HTML </i> <br>
+            El codigo de ejemplo <br>
+            <div class="imagen">
+                <img src="imgfel/CSS10-3.png" />
+            </div>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Pagina Web </i> <br>
+            Resultado <br>
+            <div class="imagen">
+                <img src="imgfel/CSS10-4.png" />
+            </div>
+            <br>
+        </div>
+        <div class="items item5 social">
+            <p>
+                Contactanos: 
+                <a href="https://www.facebook.com/lucy.jimenez.16121471?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Lucy </a>
+                <a href="https://www.instagram.com/_lucyjimenez_?igsh=MWp6OGx5YnV4cjlxMw=="><i class="fa-brands fa-instagram "></i> Lucy </a>
+                <a href="mailto:l20520363@chilpancingo.tecnm.mx"><i class="fa-regular fa-envelope-open "></i> Lucy </a>
+                <a href="https://www.facebook.com/FelixJosue.Bautista?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Félix </a>
+                <a href="https://www.instagram.com/fmk_alguienmas?igsh=MXNtNGswandyNWN6eA=="><i class="fa-brands fa-instagram "></i> Félix</a>
+                <a href="mailto:xilef_osu@hotmail.com"><i class="fa-regular fa-envelope-open "></i> Félix</a>
+            </p>
+            <p style="text-align: right;">
+                Chilpancingo de los bravo, Guerrero. Fecha de creación: 01/09/2024
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

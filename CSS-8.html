@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes en CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles-2.css">
+    <link rel="stylesheet" href="enlaces.css">
+    <script src="https://kit.fontawesome.com/8b10682772.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="menu">
+            <div class="logo"> <img src="Help-Step.png" /> </div>
+            <a href="index.html">Inicio</a>
+            <a href="HTML-1.html">Tutoriales HTML</a>
+            <a class="active" href="#">Tutoriales CSS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="items item1"> <center> Imagenes en CSS </center> </div>
+        <div class="items item2"> 
+            <a href="CSS-1.html"> 1. Introduccion </a><br>
+            <a href="CSS-2.html"> 2. Colores </a><br>
+            <a href="CSS-3.html"> 3. Texto </a><br>
+            <a href="CSS-4.html"> 4. Medidas </a><br>
+            <a href="CSS-5.html"> 5. Modelo de caja </a><br>
+            <a href="CSS-6.html"> 6. Estilos de enlace </a><br>
+            <a href="CSS-7.html"> 7. Posición </a><br>
+            <a class="active" href="#"> 8. Imagenes </a><br>
+            <a href="CSS-9.html"> 9. Transiciones </a><br>
+            <a href="CSS-10.html"> 10. Transform </a><br>
+            <a href="CSS-11.html"> 11. Animation </a><br>
+            <a href="CSS-12.html"> 12. Flexbox </a><br>
+            <a href="CSS-13.html"> 13. GRID </a><br>
+            <a href="CSS-14.html"> 14. QUERY </a><br>
+        </div>
+        <div class="items item4">
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Imagenes en CSS </center> </i><br>
+            En CSS se puede posicionar las cosas de una forma más dinamica y divertida en comparación de HTML que es muy 
+            simple, entre las formas encontramos: <br><br>
+
+            <i style="color: #320812;">background </i> <br>
+            La propiedad background es un atajo que permite definir varios aspectos de fondo en una sola línea, como el color, la imagen, la posición, la repetición y el tamaño.
+            <p class="css"> background: #fff url('imagen.jpg') no-repeat center center / cover;</p>
+            <ul>
+                <li> #fff: Color de fondo. </li>
+                <li> url('imagen.jpg'): Ruta de la imagen de fondo. </li>
+                <li> no-repeat: La imagen no se repite. </li>
+                <li> center center: La imagen está centrada. </li>
+                <li> cover: La imagen se escala para cubrir todo el área de fondo. </li>
+            </ul> <br>
+
+            <i style="color: #320812;">background-color </i> <br>
+            Esta propiedad define el color de fondo de un elemento.
+            <p class="css"> background-color: #ffcc00; /* Un color amarillo */ </p><br>
+
+            <i style="color: #320812;">background-image </i> <br>
+            Define una imagen de fondo para un elemento. Usa la función url() para especificar la ubicación de la imagen.
+            <p class="css"> background-image: url('imagen.jpg'); </p><br>
+
+            <i style="color: #320812;">background-repeat </i> <br>
+            Controla si la imagen de fondo se repite y en qué dirección.
+            <ul>
+                <li> no-repeat: No repite la imagen. </li>
+                <li> repeat-x: Repite la imagen solo horizontalmente. </li>
+                <li> repeat-y: Repite la imagen solo verticalmente. </li>
+                <li> repeat: Repite la imagen tanto horizontal como verticalmente. </li>
+            </ul>
+            <p class="css"> background-repeat: no-repeat; </p><br>
+
+            <i style="color: #320812;">background-position </i> <br>
+            Especifica la posición de la imagen de fondo dentro del elemento. Puedes usar valores como left, right, center, top, bottom, o también valores específicos en píxeles o porcentajes.
+            <p class="css"> background-position: center center; </p><br>
+            
+            <i style="color: #320812;">background-size </i> <br>
+            Define el tamaño de la imagen de fondo. Los valores comunes son:
+            <ul>
+                <li> cover: La imagen cubrirá todo el fondo del elemento, manteniendo su proporción. </li>
+                <li> contain: La imagen se escalará para caber completamente dentro del elemento. </li>
+                <li> También puedes usar valores específicos como 100px 50px. </li>
+            </ul>
+            <p class="css"> background-size: cover; </p><br>
+
+            <i style="color: #320812;">linear-gradient </i> <br>
+            Un degradado lineal que puedes usar en lugar de una imagen. Puedes definir colores y direcciones.
+            <p class="css"> background: linear-gradient(to right, red, yellow); </p>
+            <ul>
+                <li> to right: El degradado va de izquierda a derecha, si no se pone será de arriba hacia abajo. </li>
+                <li> red, yellow: Los colores del degradado.</li>
+            </ul><br>
+
+            <i style="color: #320812;">box-sizing </i> <br>
+            Define cómo se calculan las dimensiones de un elemento (ancho y alto). Los valores comunes son:
+            <ul>
+                <li> content-box: El tamaño incluye solo el contenido, sin el padding o border (valor por defecto). </li>
+                <li> border-box: El tamaño incluye el contenido, padding, y border. Esto es útil para evitar que el padding y el borde agranden el tamaño total del elemento. </li>
+            </ul>
+            <p class="css"> box-sizing: border-box; </p><br>
+
+            <i style="color: #320812;">border-radius </i> <br>
+            Controla el redondeo de las esquinas de un elemento. Puedes aplicar un valor para todas las esquinas o definir valores individuales para cada esquina (en sentido horario: superior izquierda, superior derecha, inferior derecha, inferior izquierda).
+            <p class="css"> border-radius: 10px; /* Redondea todas las esquinas */ </p>
+            O para esquinas específicas: 
+            <p class="css"> border-radius: 10px 0 10px 0; /* Redondea solo las esquinas superiores */ </p><br>
+
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Codigo CSS </i> <br>
+            El codigo de ejemplo <br>
+            <div class="imagen">
+                <img src="imgfel/CSS8-1.png" />
+            </div>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Codigo HTML </i> <br>
+            El codigo de ejemplo <br>
+            <div class="imagen">
+                <img src="imgfel/CSS8-2.png" />
+            </div>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Pagina Web </i> <br>
+            Resultado <br>
+            <div class="imagen">
+                <img src="imgfel/CSS8-3.png" />
+            </div>
+            <br>
+            <br>
+        </div>
+        <div class="items item5 social">
+            <p>
+                Contactanos: 
+                <a href="https://www.facebook.com/lucy.jimenez.16121471?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Lucy </a>
+                <a href="https://www.instagram.com/_lucyjimenez_?igsh=MWp6OGx5YnV4cjlxMw=="><i class="fa-brands fa-instagram "></i> Lucy </a>
+                <a href="mailto:l20520363@chilpancingo.tecnm.mx"><i class="fa-regular fa-envelope-open "></i> Lucy </a>
+                <a href="https://www.facebook.com/FelixJosue.Bautista?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Félix </a>
+                <a href="https://www.instagram.com/fmk_alguienmas?igsh=MXNtNGswandyNWN6eA=="><i class="fa-brands fa-instagram "></i> Félix</a>
+                <a href="mailto:xilef_osu@hotmail.com"><i class="fa-regular fa-envelope-open "></i> Félix</a>
+            </p>
+            <p style="text-align: right;">
+                Chilpancingo de los bravo, Guerrero. Fecha de creación: 01/09/2024
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

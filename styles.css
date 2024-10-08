@@ -1,0 +1,103 @@
+
+/*------------- Menu principal --------------*/
+.sticky{
+    background-color: #1a0101;
+    height: 50px;
+    position: sticky;
+    font-weight: 600;
+    font-family: 'Segoe UI';
+    font-size: 1.5rem;
+    top: 0px;
+}
+
+.menu{
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo{
+    background-color: #1a0101;
+    height: 50px;
+    padding: 0 30px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #fdb9b9;
+    padding: 0 30px;
+}
+
+.menu a:hover{
+    background-color: #842727;
+    color: black;
+}
+
+.menu a.active{
+    background-color: #842727;
+    color: black;
+}
+
+input{
+    margin: 3px 0 ;
+    width: 300px;
+}
+
+ /*------------- Menu principal --------------*/
+
+body{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    color: rgb(79, 47, 47);
+    background-color: #842727;
+}
+
+/*------------- Menu principal --------------*/
+.container{
+    border: 10px;
+    margin: 10px;
+    padding: 15px 35px;
+    background-color: #842727;
+    gap: 20px 20px;
+    
+}
+.items{
+    border: 1px solid transparent;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    background-color: #fdb9b9;
+}
+
+div{
+    padding-left: 10px;
+}
+
+.item1{
+    height: 100px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;
+    padding: 0;
+}
+
+.item2{
+    font-size: 20px;
+    text-align: left;
+}
+
+.item4{
+    font-size: 20px;
+    text-align: justify;
+}

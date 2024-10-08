@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles-2.css">
+    <link rel="stylesheet" href="enlaces.css">
+    <script src="https://kit.fontawesome.com/8b10682772.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="menu">
+            <div class="logo"> <img src="Help-Step.png" /> </div>
+            <a href="index.html">Inicio</a>
+            <a class="active" href="#">Tutoriales HTML</a>
+            <a href="CSS-1.html">Tutoriales CSS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="items item1"> <center> Tablas </center> </div>
+        <div class="items item2"> 
+            <a href="HTML-1.html"> 1. Introduccion </a><br>
+            <a href="HTML-2.html"> 2. Etiquetas </a><br> 
+            <a href="HTML-3.html"> 3. Enlaces </a><br> 
+            <a href="HTML-4.html"> 4. Listas </a><br> 
+            <a href="HTML-5.html"> 5. Imagenes </a><br> 
+            <a class="active" href="#"> 6. Tablas </a><br> 
+            <a href="HTML-7.html"> 7. Formularios </a><br> 
+            <a href="HTML-8.html"> 8. Audios y Videos </a><br> 
+            <a href="HTML-9.html"> 9. Gráficos SVG </a><br> 
+        </div>
+        <div class="items item4">
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Tablas </center> </i><br>
+            Las tablas en HTML se utilizan para organizar y presentar datos en un formato tabular, con filas y columnas. Aunque no son tan comúnmente utilizadas para el diseño de páginas web hoy en día, debido a la adopción de CSS para ese propósito, aún siguen siendo muy útiles para mostrar información estructurada, como horarios, listas de precios, y comparaciones de productos. <br>
+            <br>
+            <br>
+            <i style="color: #320812;">  Estructura Básica de una Tabla en HTML </i> <br>
+            La estructura de una tabla en HTML se define utilizando varias etiquetas específicas:
+            <dl>
+                <dt> &lt;table&gt; (table) </dt>
+                <dd> La etiqueta &lt;table&gt; es el contenedor principal para definir una tabla.</dd>
+                <dt> &lt;caption&gt; </dt>
+                <dd> La etiqueta &lt;caption&gt; define el nombre de la tabla.</dd>
+                <dt> &lt;tr&gt; (Table Row) </dt>
+                <dd> La etiqueta &lt;tr&gt; define una fila en la tabla.</dd>
+                <dt> &lt;th&gt; (Table Header) </dt>
+                <dd> La etiqueta &lt;th&gt; define una celda de encabezado en la tabla. Por defecto, el texto en las celdas &lt;th&gt; se muestra en negrita y centrado.</dd>
+                <dt> &lt;td&gt; (Table Data) </dt>
+                <dd> La etiqueta &lt;th&gt; define una celda de datos en la tabla. Estas celdas contienen el contenido real de la tabla.</dd>
+            </dl>
+            <br>
+            Un ejemplo completo de una tabla simple podría verse así:
+            <table>
+                <tr>
+                    <td>
+                        <p class="html">
+                            <br>
+                            &lt;table border="1"&gt; <br>
+                            &emsp; &lt;tr&gt;<br>
+                            &emsp; &emsp; &lt;th&gt; Nombre &lt;/th&gt;<br>
+                            &emsp; &emsp; &lt;th&gt; Edad &lt;/th&gt;<br>
+                            &emsp; &emsp; &lt;th&gt; Ciudad &lt;/th&gt;<br>
+                            &emsp; &lt;/tr&gt;<br>
+                            <br>
+                            &emsp; &lt;tr&gt;<br>
+                            &emsp; &emsp; &lt;td&gt; Ana &lt;/td&gt;<br>
+                            &emsp; &emsp; &lt;td&gt; 28 &lt;/td&gt;<br>
+                            &emsp; &emsp; &lt;td&gt; Madrid &lt;/td&gt;<br>
+                            &emsp; &lt;/tr&gt;<br>
+                            <br>
+                            &emsp; &lt;tr&gt;<br>
+                            &emsp; &emsp; &lt;td&gt; Carlos &lt;/td&gt;<br>
+                            &emsp; &emsp; &lt;td&gt; 35 &lt;/td&gt;<br>
+                            &emsp; &emsp; &lt;td&gt; Barcelona &lt;/td&gt;<br>
+                            &emsp; &lt;/tr&gt;<br>
+                            &lt;/table&gt;<br><br>
+                        </p>
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        <img src="HTML6-1.png" alt="" >
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <i style="color: #320812;"> Atributos de la Tabla </i> <br>
+            <dl>
+                <dt> border </dt>
+                <dd> Controla el grosor del borde de la tabla. Aunque este atributo se usa menos hoy en día, ya que CSS es la forma recomendada de manejar los estilos, todavía puede ser útil. </dd>
+                <dt> cellpadding y cellspacing </dt>
+                <dd> cellpadding controla el espacio interno dentro de las celdas, mientras que cellspacing controla el espacio entre las celdas. </dd>
+            </dl>
+            <table>
+                <tr>
+                    <td>
+                        <p class="html">
+                            <br>
+                            &lt;table border="1" cellpadding="10" cellspacing="5"&gt; <br>
+                            &emsp; &lt;tr&gt;<br>
+                            &emsp; &emsp; &lt;th&gt; Nombre &lt;/th&gt;<br>
+                            &emsp; &emsp; &lt;th&gt; Edad &lt;/th&gt;<br>
+                            &emsp; &emsp; &lt;th&gt; Ciudad &lt;/th&gt;<br>
+                            &emsp; &lt;/tr&gt;<br>
+                            <br>
+                            &emsp; &lt;tr&gt;<br>
+                            &emsp; &emsp; &lt;td&gt; Ana &lt;/td&gt;<br>
+                            &emsp; &emsp; &lt;td&gt; 28 &lt;/td&gt;<br>
+                            &emsp; &emsp; &lt;td&gt; Madrid &lt;/td&gt;<br>
+                            &emsp; &lt;/tr&gt;<br>
+                            <br>
+                            &emsp; &lt;tr&gt;<br>
+                            &emsp; &emsp; &lt;td&gt; Carlos &lt;/td&gt;<br>
+                            &emsp; &emsp; &lt;td&gt; 35 &lt;/td&gt;<br>
+                            &emsp; &emsp; &lt;td&gt; Barcelona &lt;/td&gt;<br>
+                            &emsp; &lt;/tr&gt;<br>
+                            &lt;/table&gt;<br><br>
+                        </p>
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        <img src="HTML6-2.png" alt="" >
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <i style="color: #320812;"> Combinación de Celdas </i> <br>
+            <dl>
+                <dt> colspan </dt>
+                <dd> Permite que una celda se extienda por varias columnas. </dd>
+                <dt> rowspan </dt>
+                <dd> Permite que una celda se extienda por varias filas. </dd>
+            </dl>
+            <table>
+                <tr>
+                    <td>
+                        <p class="html">
+                            <br>
+                            &lt;table border="1"&gt; <br>
+                            &emsp; &lt;tr&gt;<br>
+                            &emsp; &emsp; &lt;th colspan="2"&gt; Encabezado que ocupa dos columnas &lt;/th&gt;<br>
+                            &emsp; &lt;/tr&gt;<br>
+                            &emsp; &lt;tr&gt;<br>
+                            &emsp; &emsp; &lt;td&gt; Dato 1 &lt;/td&gt;<br>
+                            &emsp; &emsp; &lt;td&gt; Dato 2 &lt;/td&gt;<br>
+                            &emsp; &lt;/tr&gt;<br>
+                            &lt;/table&gt;<br><br>
+                        </p>
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        <img src="HTML6-3.png" alt="" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="html">
+                            <br>
+                            &lt;table border="1"&gt; <br>
+                            &emsp; &lt;tr&gt;<br>
+                            &emsp; &emsp; &lt;td  rowspan="2"&gt; Celda que ocupa dos filas &lt;/td&gt;<br>
+                            &emsp; &emsp; &lt;td&gt; Dato 1 &lt;/td&gt;<br>
+                            &emsp; &lt;/tr&gt;<br>
+                            &emsp; &lt;tr&gt;<br>
+                            &emsp; &emsp; &lt;td&gt; Dato 2 &lt;/td&gt;<br>
+                            &emsp; &lt;/tr&gt;<br>
+                            &lt;/table&gt;<br><br>
+                        </p>
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;"> 
+                        <img src="HTML6-4.png" alt="">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <i style="color: #320812;"> Subdivisión de la Tabla </i> <br>
+            <dl>
+                <dt> &lt;thead&gt; </dt>
+                <dd> Define un grupo de filas que representan el encabezado de la tabla. </dd>
+                <dt> &lt;tbody&gt; </dt>
+                <dd> Agrupa el contenido principal de la tabla, es decir, las filas de datos. </dd>
+                <dt> &lt;tfoot&gt; </dt>
+                <dd> Define un grupo de filas que representan el pie de la tabla. Suele utilizarse para sumarios o totales. </dd>
+            </dl>
+            <table>
+                <tr>
+                    <td>
+                        <p class="html">
+                            <br>
+                            &lt;table border="1"&gt; <br>
+                            &emsp; &lt;thead&gt;<br>
+                            &emsp; &emsp; &lt;tr&gt;<br>
+                            &emsp; &emsp; &emsp; &lt;th&gt; Nombre &lt;/th&gt;<br>
+                            &emsp; &emsp; &emsp; &lt;th&gt; Edad &lt;/th&gt;<br>
+                            &emsp; &emsp; &emsp; &lt;th&gt; Ciudad &lt;/th&gt;<br>
+                            &emsp; &emsp; &lt;/tr&gt;<br>
+                            &emsp; &lt;/thead&gt;<br>
+                            <br>
+                            &emsp; &lt;tbody&gt;<br>
+                            &emsp; &emsp; &lt;tr&gt;<br>
+                            &emsp; &emsp; &emsp; &lt;td&gt; Ana &lt;/td&gt;<br>
+                            &emsp; &emsp; &emsp; &lt;td&gt; 28 &lt;/td&gt;<br>
+                            &emsp; &emsp; &emsp; &lt;td&gt; Madrid &lt;/td&gt;<br>
+                            &emsp; &emsp; &lt;/tr&gt;<br>
+                            &emsp; &emsp; &lt;tr&gt;<br>
+                            &emsp; &emsp; &emsp; &lt;td&gt; Carlos &lt;/td&gt;<br>
+                            &emsp; &emsp; &emsp; &lt;td&gt; 35 &lt;/td&gt;<br>
+                            &emsp; &emsp; &emsp; &lt;td&gt; Barcelona &lt;/td&gt;<br>
+                            &emsp; &emsp; &lt;/tr&gt;<br>
+                            &emsp; &lt;/tbody&gt;<br>
+                            <br>
+                            &emsp; &lt;tfoot&gt;<br>
+                            &emsp; &emsp; &lt;tr&gt;<br>
+                            &emsp; &emsp; &emsp; &lt;td colspan="3"&gt; Total de registros: 2 &lt;/td&gt;<br>
+                            &emsp; &emsp; &lt;/tr&gt;<br>
+                            &emsp; &lt;/tfoot&gt;<br>
+                            &lt;/table&gt;<br><br>
+                        </p>
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        <img src="HTML6-5.png" alt="" >
+                    </td>
+                </tr>
+            </table>
+            
+
+        </div>
+
+        <div class="items item5 social">
+            <p>
+                Contactanos: 
+                <a href="https://www.facebook.com/lucy.jimenez.16121471?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Lucy </a>
+                <a href="https://www.instagram.com/_lucyjimenez_?igsh=MWp6OGx5YnV4cjlxMw=="><i class="fa-brands fa-instagram "></i> Lucy </a>
+                <a href="mailto:l20520363@chilpancingo.tecnm.mx"><i class="fa-regular fa-envelope-open "></i> Lucy </a>
+                <a href="https://www.facebook.com/FelixJosue.Bautista?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Félix </a>
+                <a href="https://www.instagram.com/fmk_alguienmas?igsh=MXNtNGswandyNWN6eA=="><i class="fa-brands fa-instagram "></i> Félix</a>
+                <a href="mailto:xilef_osu@hotmail.com"><i class="fa-regular fa-envelope-open "></i> Félix</a>
+            </p>
+            <p style="text-align: right;">
+                Chilpancingo de los bravo, Guerrero. Fecha de creación: 01/09/2024
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

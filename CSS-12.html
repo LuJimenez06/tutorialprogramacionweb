@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox en CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles-2.css">
+    <link rel="stylesheet" href="enlaces.css">
+    <script src="https://kit.fontawesome.com/8b10682772.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="menu">
+            <div class="logo"> <img src="Help-Step.png" /> </div>
+            <a href="index.html">Inicio</a>
+            <a href="HTML-1.html">Tutoriales HTML</a>
+            <a class="active" href="#">Tutoriales CSS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="items item1"> <center> Flexbox en CSS </center> </div>
+        <div class="items item2"> 
+            <a href="CSS-1.html"> 1. Introduccion </a><br>
+            <a href="CSS-2.html"> 2. Colores </a><br>
+            <a href="CSS-3.html"> 3. Texto </a><br>
+            <a href="CSS-4.html"> 4. Medidas </a><br>
+            <a href="CSS-5.html"> 5. Modelo de caja </a><br>
+            <a href="CSS-6.html"> 6. Estilos de enlace </a><br>
+            <a href="CSS-7.html"> 7. Posición </a><br>
+            <a href="CSS-8.html"> 8. Imagenes </a><br>
+            <a href="CSS-9.html"> 9. Transiciones </a><br>
+            <a href="CSS-10.html"> 10. Transform </a><br>
+            <a href="CSS-11.html"> 11. Animation </a><br>
+            <a class="active" href="#"> 12. Flexbox </a><br>
+            <a href="CSS-13.html"> 13. GRID </a><br>
+            <a href="CSS-14.html"> 14. QUERY </a><br>
+        </div>
+        <div class="items item4">
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Flexbox en CSS </center> </i><br>
+            Flexbox es un modelo de diseño en CSS diseñado para distribuir elementos en una página de manera eficiente. Facilita la alineación, el espacio entre elementos y la distribución de elementos dentro de un contenedor flexible, adaptándose a diferentes tamaños de pantalla y resoluciones. <br><br>
+
+            <i style="color: #320812;">display: flex </i> <br>
+            El primer paso para usar Flexbox es aplicar display: flex al elemento padre. Esto convierte el contenedor en un contexto de flexbox, permitiendo que sus elementos hijos se comporten de acuerdo con las propiedades de Flexbox.
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; display: flex; <br>
+                } <br> <br>
+            </p>
+            <br>
+            <br>
+
+            <i style="color: #320812; font-size: 26px;">Propiedades del Contenedor Flex (Padre) </i> <br>
+            Estas propiedades se aplican al contenedor que tiene display: flex y controlan la disposición de los elementos flexibles (hijos) dentro del contenedor.<br>
+            <br>
+
+            <i style="color: #320812;">justify-content </i> <br>
+            Esta propiedad alinea los elementos hijos a lo largo del eje principal (horizontal por defecto) y controla cómo se distribuye el espacio entre los elementos. <br>
+            Valores comunes:
+            <ul>
+                <li>flex-start: Los elementos se alinean al inicio del contenedor.</li>
+                <li>flex-end: Los elementos se alinean al final del contenedor.</li>
+                <li>center: Los elementos se alinean en el centro del contenedor.</li>
+                <li>space-between: Los elementos se distribuyen con espacio igual entre ellos, sin espacio a los lados.</li>
+                <li>space-around: Los elementos tienen espacio igual entre ellos, con espacio reducido en los extremos.</li>
+                <li>space-evenly: Los elementos tienen espacio igual tanto entre ellos como en los extremos.</li>
+            </ul>
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; display: flex; <br>
+                    &emsp; justify-content: space-between; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">align-items </i> <br>
+            Controla la alineación de los elementos a lo largo del eje cruzado (vertical por defecto). Alinea todos los elementos dentro del contenedor de manera uniforme. <br>
+            Valores comunes:
+            <ul>
+                <li>stretch (valor por defecto): Los elementos se estiran para llenar el contenedor.</li>
+                <li>center: Los elementos se alinean verticalmente en el centro.</li>
+                <li>flex-start: Los elementos se alinean al inicio del eje cruzado.</li>
+                <li>flex-end: Los elementos se alinean al final del eje cruzado.</li>
+            </ul>
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; display: flex; <br>
+                    &emsp; align-items: center; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">flex-direction </i> <br>
+            Define la dirección del eje principal, determinando cómo se distribuyen los elementos hijos. <br>
+            Valores:
+            <ul>
+                <li>row (valor por defecto): Los elementos se alinean en una fila horizontal.</li>
+                <li>row-reverse: Los elementos se alinean en una fila inversa.</li>
+                <li>column: Los elementos se alinean en una columna vertical.</li>
+                <li>column-reverse: Los elementos se alinean en una columna inversa.</li>
+            </ul>
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; display: flex; <br>
+                    &emsp; flex-direction: row-reverse; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">flex-wrap </i> <br>
+            Controla si los elementos deben ajustarse a múltiples líneas si no caben en una sola. <br>
+            Valores:
+            <ul>
+                <li>nowrap (valor por defecto): Todos los elementos permanecen en una sola línea.</li>
+                <li>wrap: Los elementos se ajustan en varias líneas.</li>
+                <li>wrap-reverse: Los elementos se ajustan en varias líneas en orden inverso.</li>
+            </ul>
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; display: flex; <br>
+                    &emsp; flex-wrap: wrap; <br>
+                } <br> <br>
+            </p>
+            <br>
+            
+            <i style="color: #320812;">flex-flow </i> <br>
+            Es una propiedad abreviada que combina flex-direction y flex-wrap.
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; display: flex; <br>
+                    &emsp; flex-flow: column wrap; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">align-content </i> <br>
+            Controla el espacio entre las líneas del contenedor flex cuando hay varias líneas de elementos. Solo afecta a los elementos si flex-wrap está habilitado. <br>
+            Valores:
+            <ul>
+                <li>center: Las líneas se agrupan en el centro del contenedor.</li>
+                <li>flex-start: Las líneas se alinean al inicio del contenedor.</li>
+                <li>flex-end: Las líneas se alinean al final del contenedor.</li>
+            </ul>
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; display: flex; <br>
+                    &emsp; align-content: center; <br>
+                } <br> <br>
+            </p>
+            <br>
+            <br>
+
+            <i style="color: #320812; font-size: 26px;">Propiedades de los Elementos Flex (Hijos) </i> <br>
+            Estas propiedades se aplican a los elementos dentro del contenedor flex y controlan cómo se comporta cada elemento de manera individual.<br>
+            <br>
+
+            <i style="color: #320812;">align-self </i> <br>
+            Permite alinear individualmente un elemento a lo largo del eje cruzado, sobrescribiendo la propiedad align-items del contenedor. <br>
+            Valores comunes:
+            <ul>
+                <li>auto (valor por defecto): Usa el valor de align-items del contenedor.</li>
+                <li>center: Alinea el elemento en el centro del eje cruzado.</li>
+                <li>flex-start: Alinea el elemento al inicio del eje cruzado.</li>
+                <li>flex-end: Alinea el elemento al final del eje cruzado.</li>
+                <li>stretch: El elemento se estira para llenar el espacio disponible.</li>
+            </ul>
+            <p class="css"> <br>
+                .item { <br>
+                    &emsp; align-self: center; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">flex-grow </i> <br>
+            Define cómo debe crecer un elemento en relación con los demás elementos flexibles. Un valor de 1 significa que el elemento puede crecer si es necesario, mientras que 0 (por defecto) indica que el elemento no crecerá. <br>
+            <p class="css"> <br>
+                .item { <br>
+                    &emsp; flex-grow: 1; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">flex-shrink </i> <br>
+            Especifica cuánto debe encogerse un elemento en relación con los demás elementos cuando el espacio en el contenedor es limitado. Un valor de 1 permite que el elemento se encoja, mientras que 0 evita que lo haga. <br>
+            <p class="css"> <br>
+                .item { <br>
+                    &emsp; flex-shrink: 1; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">flex-basis </i> <br>
+            Especifica el tamaño inicial de un elemento antes de que se aplique flex-grow o flex-shrink. Puede ser un valor fijo (px, %) o auto. <br>
+            <p class="css"> <br>
+                .item { <br>
+                    &emsp; flex-basis: 200px; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">flex </i> <br>
+            Es una propiedad abreviada que combina flex-grow, flex-shrink y flex-basis. Se suele utilizar para definir el comportamiento flexible de los elementos de forma más sencilla. <br>
+            <p class="css"> <br>
+                .item { <br>
+                    &emsp; flex: 1 1 100px; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">order </i> <br>
+            Define el orden de los elementos dentro del contenedor. El valor por defecto es 0. Un valor mayor moverá el elemento hacia adelante, mientras que un valor negativo lo moverá hacia atrás. <br>
+            <p class="css"> <br>
+                .item { <br>
+                    &emsp; order: -1; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Codigo CSS </i> <br>
+            El codigo de ejemplo <br>
+            <div class="imagen">
+                <img src="imgfel/CSS12-1.png" />
+                <img src="imgfel/CSS12-2.png" />
+            </div>
+            <br>
+            Flexbox <br>
+            <div class="imagen">
+                <img src="imgfel/CSS12-3.png" />
+            </div>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Codigo HTML </i> <br>
+            El codigo de ejemplo <br>
+            <div class="imagen">
+                <img src="imgfel/CSS12-4.png" />
+            </div>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Pagina Web </i> <br>
+            Resultado <br>
+            <div class="imagen">
+                <img src="imgfel/CSS12-5.png" />
+            </div>
+            <br>
+        </div>
+        <div class="items item5 social">
+            <p>
+                Contactanos: 
+                <a href="https://www.facebook.com/lucy.jimenez.16121471?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Lucy </a>
+                <a href="https://www.instagram.com/_lucyjimenez_?igsh=MWp6OGx5YnV4cjlxMw=="><i class="fa-brands fa-instagram "></i> Lucy </a>
+                <a href="mailto:l20520363@chilpancingo.tecnm.mx"><i class="fa-regular fa-envelope-open "></i> Lucy </a>
+                <a href="https://www.facebook.com/FelixJosue.Bautista?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Félix </a>
+                <a href="https://www.instagram.com/fmk_alguienmas?igsh=MXNtNGswandyNWN6eA=="><i class="fa-brands fa-instagram "></i> Félix</a>
+                <a href="mailto:xilef_osu@hotmail.com"><i class="fa-regular fa-envelope-open "></i> Félix</a>
+            </p>
+            <p style="text-align: right;">
+                Chilpancingo de los bravo, Guerrero. Fecha de creación: 01/09/2024
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

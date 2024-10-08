@@ -1,0 +1,53 @@
+
+
+.container{
+    display: grid;
+    grid-template-areas: 
+        'header         header  header  header  article'
+        'main           main    main    main    article'
+        'main           main    main    main    article'
+        'main           main    main    main    article'
+        'footer         footer  footer  footer  footer'
+    ;
+}
+
+.item1{
+    grid-area: header; 
+    height: 100px;
+    width: 3fr;
+}
+.item2{
+    grid-area: article; 
+    height: 4fr;
+    width: 300px;
+}
+.item4{
+    grid-area: main;
+    height: 3fr;
+    width: 4fr; 
+}
+.item5{
+    grid-area: footer; 
+    height: 100px;
+    width: 5fr;
+    font-size: 18px; 
+    overflow: hidden; /* Evita que el texto se desborde del contenedor */
+    text-align: justify;
+
+}
+
+.item4 table {
+    width: 100%;;
+    border-collapse: collapse;
+    table-layout: fixed; /* Fija el tamaño de las celdas */
+}
+
+.item4 table th, .item4 table td {
+    border: 1px solid #ffffff00;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+    width: 33.33%; /* Distribuye el ancho de las celdas de manera equitativa */
+    white-space:inherit; /* Evita que el contenido expanda la celda */
+    overflow:hidden; /* Oculta el desbordamiento de texto */
+}

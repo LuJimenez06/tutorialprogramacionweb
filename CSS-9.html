@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones en CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles-2.css">
+    <link rel="stylesheet" href="enlaces.css">
+    <script src="https://kit.fontawesome.com/8b10682772.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="menu">
+            <div class="logo"> <img src="Help-Step.png" /> </div>
+            <a href="index.html">Inicio</a>
+            <a href="HTML-1.html">Tutoriales HTML</a>
+            <a class="active" href="#">Tutoriales CSS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="items item1"> <center> Transiciones en CSS </center> </div>
+        <div class="items item2"> 
+            <a href="CSS-1.html"> 1. Introduccion </a><br>
+            <a href="CSS-2.html"> 2. Colores </a><br>
+            <a href="CSS-3.html"> 3. Texto </a><br>
+            <a href="CSS-4.html"> 4. Medidas </a><br>
+            <a href="CSS-5.html"> 5. Modelo de caja </a><br>
+            <a href="CSS-6.html"> 6. Estilos de enlace </a><br>
+            <a href="CSS-7.html"> 7. Posición </a><br>
+            <a href="CSS-8.html"> 8. Imagenes </a><br>
+            <a class="active" href="#"> 9. Transiciones </a><br>
+            <a href="CSS-10.html"> 10. Transform </a><br>
+            <a href="CSS-11.html"> 11. Animation </a><br>
+            <a href="CSS-12.html"> 12. Flexbox </a><br>
+            <a href="CSS-13.html"> 13. GRID </a><br>
+            <a href="CSS-14.html"> 14. QUERY </a><br>
+        </div>
+        <div class="items item4">
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Transiciones en CSS </center> </i><br>
+            En CSS se puede posicionar las cosas de una forma más dinamica y divertida en comparación de HTML que es muy 
+            simple, entre las formas encontramos: <br><br>
+
+            <i style="color: #320812;">transition </i> <br>
+            Es una propiedad abreviada que permite definir en una sola línea todas las propiedades relacionadas con la transición.
+            <p class="css"> transition: all 0.3s ease-in-out 0s; </p>
+            <ul>
+                <li> all: Se aplicará la transición a todas las propiedades que cambien. </li>
+                <li> 0.3s: Duración de la transición (0.3 segundos). </li>
+                <li> ease-in-out: Función de temporización que suaviza el comienzo y el final. </li>
+                <li> 0s: No hay retraso, la transición empieza de inmediato. </li>
+            </ul>
+            <br>
+
+            <i style="color: #320812;">transition-property </i> <br>
+            Especifica qué propiedades CSS cambiarán de manera gradual cuando ocurran. <br>
+            Puedes animar prácticamente cualquier propiedad que implique un valor numérico o medible (como tamaños, colores, posiciones). Sin embargo, no todas las propiedades pueden ser animadas, ya que algunas, como display, no tienen un rango continuo de valores.
+            <p class="css"> transition-property: background-color, width; </p>
+            Aquí, la transición afectará solo al cambio en el color de fondo y el ancho del elemento.<br>
+            Lista de propiedades comunes que puedes cambiar con transition: 
+            <ol>
+                <li>Propiedades de tamaño y caja 
+                    <ul>
+                        <li>width (ancho)</li>
+                        <li>height (alto)</li>
+                        <li>padding (relleno interno)</li>
+                        <li>margin (margen externo)</li>
+                        <li>border-width (ancho del borde)</li>
+                        <li>border-radius (redondeo de las esquinas)</li>
+                        <li>box-shadow (sombra de la caja)</li>
+                        <li>max-width, min-width, max-height, min-height</li>
+                    </ul>
+                </li>
+                <li>Propiedades de color y fondo
+                    <ul>
+                        <li>background-color (color de fondo)</li>
+                        <li>background-position (posición del fondo)</li>
+                        <li>background-size (tamaño del fondo)</li>
+                        <li>border-color (color del borde)</li>
+                        <li>color (color del texto)</li>
+                    </ul>
+                </li>
+                <li>Propiedades de posición y transformación
+                    <ul>
+                        <li>left, right, top, bottom (posición del elemento relativo)</li>
+                        <li>transform (rotación, escala, traslación y sesgo)</li>
+                        <li>translateX, translateY (traslaciones específicas)</li>
+                        <li>rotate (rotación)</li>
+                        <li>scale (escalado)</li>
+                        <li>skew (sesgado)</li>
+                    </ul>
+                </li>
+                <li>Propiedades de opacidad
+                    <ul>
+                        <li>opacity (transparencia)</li>
+                    </ul>
+                </li>
+                <li>Propiedades de visibilidad y desplazamiento
+                    <ul> 
+                        <li>visibility (visibilidad del elemento: visible, hidden)</li>
+                        <li>z-index (nivel de apilamiento de elementos)</li>
+                        <li>scroll (desplazamiento de barras)</li>
+                    </ul>
+                </li>
+                <li>Propiedades de texto
+                    <ul> 
+                        <li>letter-spacing (espacio entre letras)</li>
+                        <li>word-spacing (espacio entre palabras)</li>
+                        <li>text-shadow (sombra del texto)</li>
+                        <li>font-size (tamaño de la fuente)</li>
+                        <li>line-height (altura de la línea)</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <i style="color: #320812;">transition-duration </i> <br>
+            Define la duración de la transición, es decir, cuánto tiempo toma el cambio en producirse.
+            <p class="css"> transition-duration: 0.5s; <br> transition-duration: 500ms; </p>
+            Esto indica que la transición durará medio segundo, se recomienda que sea en milisegundos.<br><br>
+
+            <i style="color: #320812;">transition-delay </i> <br>
+            Especifica cuánto tiempo debe esperar la transición antes de comenzar.
+            <p class="css"> transition-delay: 1000ms; </p>
+            Esto significa que la transición comenzará un segundo después del cambio.<br><br>
+
+            <i style="color: #320812;">transition-timing-function </i> <br>
+            Controla la velocidad del cambio durante la transición. Algunos valores comunes son:
+            <ul>
+                <li>ease: Comienza rápido, luego se ralentiza.</li>
+                <li>ease-in: Comienza lento, luego acelera.</li>
+                <li>ease-out: Comienza rápido, luego se ralentiza.</li>
+                <li>ease-in-out: Combina ambos; comienza y termina lento, pero es más rápido en el medio.</li>
+                <li>linear: El cambio ocurre a una velocidad constante.</li>
+                <li>cubic-bezier(n,n,n,n): Define una curva personalizada para la velocidad de la transición</li>
+            </ul>
+            <p class="css"> transition-timing-function: ease-in-out; </p>
+            O si deseas mayor control: 
+            <p class="css"> transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); </p><br>
+            
+
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Codigo CSS </i> <br>
+            El codigo de ejemplo <br>
+            <div class="imagen">
+                <img src="imgfel/CSS9-1.png" />
+            </div>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Codigo HTML </i> <br>
+            El codigo de ejemplo <br>
+            <div class="imagen">
+                <img src="imgfel/CSS9-2.png" />
+            </div>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Pagina Web </i> <br>
+            Resultado <br>
+            <div class="imagen">
+                <img src="imgfel/CSS9-3.png" />
+            </div>
+            <br>
+            <br>
+        </div>
+        <div class="items item5 social">
+            <p>
+                Contactanos: 
+                <a href="https://www.facebook.com/lucy.jimenez.16121471?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Lucy </a>
+                <a href="https://www.instagram.com/_lucyjimenez_?igsh=MWp6OGx5YnV4cjlxMw=="><i class="fa-brands fa-instagram "></i> Lucy </a>
+                <a href="mailto:l20520363@chilpancingo.tecnm.mx"><i class="fa-regular fa-envelope-open "></i> Lucy </a>
+                <a href="https://www.facebook.com/FelixJosue.Bautista?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Félix </a>
+                <a href="https://www.instagram.com/fmk_alguienmas?igsh=MXNtNGswandyNWN6eA=="><i class="fa-brands fa-instagram "></i> Félix</a>
+                <a href="mailto:xilef_osu@hotmail.com"><i class="fa-regular fa-envelope-open "></i> Félix</a>
+            </p>
+            <p style="text-align: right;">
+                Chilpancingo de los bravo, Guerrero. Fecha de creación: 01/09/2024
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

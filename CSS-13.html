@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID en CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles-2.css">
+    <link rel="stylesheet" href="enlaces.css">
+    <script src="https://kit.fontawesome.com/8b10682772.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="menu">
+            <div class="logo"> <img src="Help-Step.png" /> </div>
+            <a href="index.html">Inicio</a>
+            <a href="HTML-1.html">Tutoriales HTML</a>
+            <a class="active" href="#">Tutoriales CSS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="items item1"> <center> GRID en CSS </center> </div>
+        <div class="items item2"> 
+            <a href="CSS-1.html"> 1. Introduccion </a><br>
+            <a href="CSS-2.html"> 2. Colores </a><br>
+            <a href="CSS-3.html"> 3. Texto </a><br>
+            <a href="CSS-4.html"> 4. Medidas </a><br>
+            <a href="CSS-5.html"> 5. Modelo de caja </a><br>
+            <a href="CSS-6.html"> 6. Estilos de enlace </a><br>
+            <a href="CSS-7.html"> 7. Posición </a><br>
+            <a href="CSS-8.html"> 8. Imagenes </a><br>
+            <a href="CSS-9.html"> 9. Transiciones </a><br>
+            <a href="CSS-10.html"> 10. Transform </a><br>
+            <a href="CSS-11.html"> 11. Animation </a><br>
+            <a href="CSS-12.html"> 12. Flexbox </a><br>
+            <a class="active" href="#"> 13. GRID </a><br>
+            <a href="CSS-14.html"> 14. QUERY </a><br>
+        </div>
+        <div class="items item4">
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Grid Layout en CSS </center> </i><br>
+            CSS Grid Layout es un sistema de diseño que facilita la creación de diseños complejos y responsivos, utilizando una estructura bidimensional de filas y columnas. Grid permite controlar el tamaño, posición y distribución de los elementos de forma flexible y precisa. <br><br>
+
+            <i style="color: #320812;">display: grid </i> <br>
+            Para crear un contenedor con Grid, debes aplicar display: grid al elemento que actuará como el contenedor padre. Esto permite definir la estructura de filas y columnas en las cuales se organizarán los elementos.
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; display: grid; <br>
+                } <br> <br>
+            </p>
+            <br>
+            <br>
+
+            <i style="color: #320812; font-size: 26px;">Propiedades del Contenedor Grid (Padre) </i> <br>
+            Estas propiedades se aplican al contenedor que tiene display: grid y controlan la disposición de las filas, columnas y áreas en las que se organizarán los elementos hijos. <br>
+            <br>
+
+            <i style="color: #320812;">grid-template-columns </i> <br>
+            Define el número de columnas y sus tamaños dentro del contenedor Grid. <br>
+            Valores comunes:
+            <ul>
+                <li>auto: Las columnas tendrán el tamaño necesario para acomodar el contenido.</li>
+                <li>px: Tamaños fijos en píxeles para cada columna.</li>
+                <li>fr: Una unidad flexible que distribuye el espacio sobrante entre las columnas.</li>
+                <li>repeat(n, tamaño): Repite la definición de columnas n veces.</li>
+                <li>repeat(auto-fill, tamaño): Crea tantas columnas como sea posible, ajustándose al tamaño del contenedor.</li>
+                <li>repeat(auto-fill, minmax(min, max)): Crea columnas que se ajustan automáticamente dentro de un rango mínimo y máximo.</li>
+            </ul>
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; display: grid; <br>
+                    &emsp; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">grid-template-rows </i> <br>
+            Define el número de filas y sus tamaños dentro del contenedor Grid. Funciona de manera similar a grid-template-columns. <br>
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; grid-template-rows: repeat(3, 200px); <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">column-gap </i> <br>
+            Controla el espacio entre las columnas. <br>
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; column-gap: 20px; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">row-gap </i> <br>
+            Controla el espacio entre las filas. <br>
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; row-gap: 20px; <br>
+                } <br> <br>
+            </p>
+            <br>
+            
+            <i style="color: #320812;">gap </i> <br>
+            Es una propiedad abreviada que combina row-gap y column-gap. Controla el espacio entre filas y columnas de manera simultánea. <br>
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; gap: 20px; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">align-items </i> <br>
+            Controla la alineación vertical de los elementos dentro del contenedor Grid. <br>
+            Valores comunes:
+            <ul>
+                <li>center: Alinea los elementos en el centro vertical del contenedor.</li>
+                <li>start: Alinea los elementos en la parte superior del contenedor.</li>
+                <li>end: Alinea los elementos en la parte inferior del contenedor.</li>
+            </ul>
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; align-items: center; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">justify-items </i> <br>
+            Controla la alineación horizontal de los elementos dentro del contenedor Grid. <br>
+            Valores comunes:
+            <ul>
+                <li>center: Alinea los elementos en el centro horizontal del contenedor.</li>
+                <li>start: Alinea los elementos al principio del contenedor (izquierda).</li>
+                <li>end: Alinea los elementos al final del contenedor (derecha).</li>
+            </ul>
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; justify-items: start;  <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">grid-template-areas </i> <br>
+            Define áreas nombradas dentro del Grid, lo que facilita organizar elementos en lugares específicos dentro de la cuadrícula. <br>
+            <p class="css"> <br>
+                .container { <br>
+                    &emsp; grid-template-areas: <br>
+                    &emsp; &emsp; 'header header header article' <br>
+                    &emsp; &emsp; 'sidemenu main main article' <br>
+                    &emsp; &emsp; 'sidemenu main main article' <br>
+                    &emsp; &emsp; 'footer footer footer footer'; <br>
+                } <br> <br>
+            </p>
+            Los elementos hijos se asignan a estas áreas con grid-area. <br>
+            <br>
+            <br>
+
+            <i style="color: #320812; font-size: 26px;">Propiedades de los Elementos Grid (Hijos) </i> <br>
+            Estas propiedades controlan el posicionamiento y tamaño de los elementos hijos dentro del contenedor Grid. <br>
+
+            <i style="color: #320812;">grid-column-start y grid-column-end </i> <br>
+            Controlan el inicio y el final de un elemento en el eje de las columnas. Especifican desde qué columna comienza y hasta dónde se extiende. <br>
+            <p class="css"> <br>
+                .item { <br>
+                    &emsp; grid-column-start: 1; <br>
+                    &emsp; grid-column-end: 3; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">grid-column </i> <br>
+            Es una propiedad abreviada que combina grid-column-start y grid-column-end. <br>
+            <p class="css"> <br>
+                .item { <br>
+                    &emsp; grid-column: 1 / 3; <br>
+                } <br> <br>
+            </p>
+            También puedes usar span para que el elemento abarque varias columnas: 
+            <p class="css"> <br>
+                .item { <br>
+                    &emsp; grid-column-start: 1; <br>
+                    &emsp; grid-column: span 2; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">grid-row-start y grid-row-end </i> <br>
+            Controlan el inicio y el final de un elemento en el eje de las filas. Funcionan de manera similar a las propiedades de columna. <br>
+            <p class="css"> <br>
+                .item { <br>
+                    &emsp; grid-row-start: 1; <br>
+                    &emsp; grid-row-end: 2; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">grid-row </i> <br>
+            Es una propiedad abreviada que combina grid-row-start y grid-row-end. <br>
+            <p class="css"> <br>
+                .item { <br>
+                    &emsp; grid-row: 1 / 2; <br>
+                } <br> <br>
+            </p>
+            También puedes usar span para que el elemento abarque varias columnas: 
+            <p class="css"> <br>
+                .item { <br>
+                    &emsp; grid-row-start: 1; <br>
+                    &emsp; grid-row: span 2; <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <i style="color: #320812;">grid-area </i> <br>
+            Es una propiedad que permite posicionar un elemento en un área específica del Grid definida con grid-template-areas. También puede combinar grid-row y grid-column para especificar el área en términos de líneas de la cuadrícula. <br>
+            <p class="css"> <br>
+                .item { <br>
+                    &emsp; grid-area: header; <br>
+                } <br> <br>
+            </p>
+            Ejemplo usando líneas de la cuadrícula: 
+            <p class="css"> <br>
+                .item { <br>
+                    &emsp; grid-area: 1 / 1 / 2 / 3; /* Fila inicio / Columna inicio / Fila fin / Columna fin */ <br>
+                } <br> <br>
+            </p>
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Codigo CSS </i> <br>
+            El codigo de ejemplo <br>
+            <div class="imagen">
+                <img src="imgfel/CSS13-1.png" />
+            </div>
+            <br>
+            Grid Layout <br>
+            <div class="imagen">
+                <img src="imgfel/CSS13-2.png" />
+                <img src="imgfel/CSS13-3.png" />
+                <img src="imgfel/CSS13-4.png" />
+            </div>
+            <br>
+            <br>
+            <i style="color: #320812;">Codigo HTML </i> <br>
+            El codigo de ejemplo <br>
+            <div class="imagen">
+                <img src="imgfel/CSS13-5.png" />
+            </div>
+            <br>
+            <br>
+            <br>
+            <i style="color: #320812;">Pagina Web </i> <br>
+            Resultado <br>
+            <div class="imagen">
+                <img src="imgfel/CSS13-6.png" />
+            </div>
+            <br>
+        </div>
+        <div class="items item5 social">
+            <p>
+                Contactanos: 
+                <a href="https://www.facebook.com/lucy.jimenez.16121471?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Lucy </a>
+                <a href="https://www.instagram.com/_lucyjimenez_?igsh=MWp6OGx5YnV4cjlxMw=="><i class="fa-brands fa-instagram "></i> Lucy </a>
+                <a href="mailto:l20520363@chilpancingo.tecnm.mx"><i class="fa-regular fa-envelope-open "></i> Lucy </a>
+                <a href="https://www.facebook.com/FelixJosue.Bautista?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Félix </a>
+                <a href="https://www.instagram.com/fmk_alguienmas?igsh=MXNtNGswandyNWN6eA=="><i class="fa-brands fa-instagram "></i> Félix</a>
+                <a href="mailto:xilef_osu@hotmail.com"><i class="fa-regular fa-envelope-open "></i> Félix</a>
+            </p>
+            <p style="text-align: right;">
+                Chilpancingo de los bravo, Guerrero. Fecha de creación: 01/09/2024
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

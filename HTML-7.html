@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles-2.css">
+    <link rel="stylesheet" href="enlaces.css">
+    <script src="https://kit.fontawesome.com/8b10682772.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="menu">
+            <div class="logo"> <img src="Help-Step.png" /> </div>
+            <a href="index.html">Inicio</a>
+            <a class="active" href="#">Tutoriales HTML</a>
+            <a href="CSS-1.html">Tutoriales CSS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="items item1"> <center> Formularios </center> </div>
+        <div class="items item2"> 
+            <a href="HTML-1.html"> 1. Introduccion </a><br>
+            <a href="HTML-2.html"> 2. Etiquetas </a><br> 
+            <a href="HTML-3.html"> 3. Enlaces </a><br> 
+            <a href="HTML-4.html"> 4. Listas </a><br> 
+            <a href="HTML-5.html"> 5. Imagenes </a><br> 
+            <a href="HTML-6.html"> 6. Tablas </a><br> 
+            <a class="active" href="#"> 7. Formularios </a><br> 
+            <a href="HTML-8.html"> 8. Audios y Videos </a><br> 
+            <a href="HTML-9.html"> 9. Gráficos SVG </a><br> 
+        </div>
+        <div class="items item4">
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Formularios </center> </i><br>
+            Los formularios en HTML son una de las herramientas más importantes para interactuar con los usuarios en una página web. Permiten a los usuarios enviar datos al servidor, ya sea para autenticación, búsqueda, encuestas, o cualquier otra forma de entrada de información. A continuación, te presento una guía sobre los formularios en HTML. <br>
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 22px;">  Estructura Básica de un Formulario </i> <br>
+            La estructura básica de un formulario en HTML se define utilizando la etiqueta &lt;form&gt;. Dentro de esta etiqueta, se colocan diferentes elementos de entrada como campos de texto, botones de envío, casillas de verificación, entre otros. <br>
+            La etiqueta &lt;form&gt; es el contenedor principal para todos los elementos de un formulario.<br>
+            Atributos comunes: <br>
+            <ul>
+                <li> action: Define la URL a la que se enviarán los datos del formulario. </li>
+                <li> method: Especifica el método HTTP que se utilizará para enviar los datos (GET o POST). </li>
+                <li> name: Especifica el nombre del formulario </li>
+                <li> target: Especifica dónde mostrar la respuesta que se recibe después de enviarla La forma </li>
+                <li> enctype: Define el tipo de codificación de datos para el formulario (importante para la carga de archivos). </li>
+                <li> autocomplete: Especifica si un formulario debe tener la función de autocompletar activada o desactivada </li>
+                <li> novalidate: Especifica que el formulario no debe validarse cuando se envía </li> 
+                <li> accept-charset: Especifica las codificaciones de caracteres utilizadas para el envío de formularios </li>
+                <li> rel: Especifica la relación entre un recurso vinculado y el recurso actual documento</li> 
+
+            </ul>
+            <p class="html">
+                <br>
+                &lt;form  action="/submit" method="post"&gt; <br> 
+                <br> ... (Elementos del formulario) ... <br> <br>   
+                &lt;/form&gt;<br>
+                <br>
+            </p>
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 22px;"> Elementos Comunes del Formulario </i> <br><br>
+            <i style="color: #320812;"> &lt;input&gt; </i><br>
+            La etiqueta &lt;input&gt; es versátil y se utiliza para una variedad de entradas de datos. <br>
+            <ul>
+                <li> 
+                    type: Define el tipo de dato que el campo acepta, como texto, contraseña, correo electrónico, número, etc. 
+
+                    <ol>
+                        <li> button: Crea un botón simple que no tiene funcionalidad predefinida. Para hacer que el botón realice alguna acción, se debe usar JavaScript. <br>
+                        <form action="">
+                            <input type="button" value="Botón">
+                        </form> <br> </li>
+                        <li> checkbox: Crea una casilla de verificación que el usuario puede marcar o desmarcar. Se utiliza cuando el usuario tiene la opción de seleccionar una o más opciones de un conjunto. <br>
+                            <form action="">
+                                <input type="checkbox"><input type="checkbox"><input type="checkbox">
+                            </form> <br> </li>
+                        <li> color: Muestra un selector de color que permite al usuario elegir un color. <br>
+                            <form action="">
+                                <input type="color">
+                            </form> <br> </li>
+                        <li> date: Muestra un selector de fecha que permite al usuario seleccionar una fecha (año, mes, día). <br>
+                            <form action="">
+                                <input type="date">
+                            </form> <br> </li>
+                        <li> datetime-local: Permite al usuario seleccionar una fecha y hora sin zona horaria (año, mes, día, hora y minutos). <br>
+                            <form action="">
+                                <input type="datetime-local">
+                            </form> <br> </li>
+                        <li> email: Campo de texto diseñado para ingresar direcciones de correo electrónico. Incluye validación automática para asegurar que el valor ingresado tiene el formato correcto de un correo electrónico. <br>
+                            <form action="">
+                                <input type="email" placeholder="Email">
+                            </form> <br> </li>
+                        <li> file: Crea un botón que permite al usuario seleccionar un archivo para cargar. <br>
+                            <form action="">
+                                <input type="file">
+                            </form> <br> </li>
+                        <li> hidden: Campo oculto que no se muestra en la página pero envía un valor especificado al servidor cuando se envía el formulario. <br>
+                            <form action="">
+                                <input type="hidden">
+                            </form> <br> </li>
+                        <li> image: Muestra una imagen que, al hacer clic, envía el formulario. Es similar a un botón de envío (submit). <br>
+                            <form action="">
+                                <input type="image" src="imagen.png">
+                            </form> <br> </li>
+                        <li> month: Permite al usuario seleccionar un mes y un año, pero no un día. <br>
+                            <form action="">
+                                <input type="month">
+                            </form> <br> </li>
+                        <li> number: Campo de entrada que solo acepta números. Permite definir un rango de valores y añadir controles para aumentar o disminuir el número. <br>
+                            <form action="">
+                                <input type="number" placeholder="Número">
+                            </form> <br> </li>
+                        <li> password: Campo de texto que oculta el texto que se ingresa, para proteger información sensible como contraseñas. <br>
+                            <form action="">
+                                <input type="password" placeholder="Contraseña">
+                            </form> <br> </li>
+                        <li> radio: Crea un botón de opción. Los botones de opción permiten al usuario seleccionar solo una opción de un conjunto de opciones. <br>
+                        <form action="">
+                            <input type="radio" name="radio"><input type="radio" name="radio"><input type="radio" name="radio">
+                        </form> <br> </li>
+                        <li> range: Crea un control deslizante que permite al usuario seleccionar un valor dentro de un rango definido. <br>
+                            <form action="">
+                                <input type="range">
+                            </form> <br> </li>
+                        <li> reset: Crea un botón que restablece todos los campos del formulario a sus valores iniciales. <br>
+                            <form action="">
+                                <input type="reset">
+                            </form> <br> </li>
+                        <li> search: Campo de texto diseñado para ingresar términos de búsqueda. Similar a text, pero con algunas optimizaciones de estilo para interfaces de búsqueda. <br>
+                            <form action="">
+                                <input type="search" placeholder="Buscar">
+                            </form> <br> </li>
+                        <li> submit: Crea un botón que envía el formulario cuando se hace clic en él. <br>
+                            <form action="">
+                                <input type="submit" value="Enviar">
+                            </form> <br> </li>
+                        <li> tel: Campo de texto diseñado para ingresar números de teléfono. No realiza validación automática del formato, pero se espera que el usuario ingrese un número de teléfono válido. <br>
+                            <form action="">
+                                <input type="tel" placeholder="Telefono">
+                            </form> <br> </li>
+                        <li> text: Campo de texto estándar para ingresar datos de texto. <br>
+                            <form action="">
+                                <input type="text" placeholder="Escriba aquí">
+                            </form> <br> </li>
+                        <li> time: Permite al usuario seleccionar una hora (horas y minutos). <br>
+                            <form action="">
+                                <input type="time">
+                            </form> <br> </li>
+                        <li> url: Campo de texto diseñado para ingresar URLs. Incluye validación automática para asegurarse de que el valor ingresado es una URL válida. <br>
+                            <form action="">
+                                <input type="url" placeholder="Enlace">
+                            </form> <br> </li>
+                        <li> week: Permite al usuario seleccionar una semana y un año. <br>
+                            <form action="">
+                                <input type="week">
+                            </form> <br> </li>
+                    </ol>
+
+                </li>
+
+                <li>
+                    name: Asigna un nombre al campo para identificar los datos cuando se envían.
+                </li>
+                <li>
+                    <dt> value: Define el valor inicial del campo. </dt>
+                </li>
+            </ul>
+            <br>
+            <br>
+            <i style="color: #320812;"> &lt;textarea&gt; </i><br>
+            Se utiliza para permitir la entrada de texto en varias líneas. <br>
+            <ul>
+                <li> rows: Número de filas visibles. </li>
+                <li> cols: Número de columnas visibles. </li>
+            </ul>
+            <form action="">
+                <textarea name="message" rows="4" cols="50" placeholder="Escribe tu mensaje aquí"></textarea>
+            </form>
+            <br>
+            <br>
+            <i style="color: #320812;"> &lt;select&gt; y  &lt;option&gt; </i><br>
+            La etiqueta &lt;select&gt; se utiliza para crear un menú desplegable, y cada opción dentro del menú se define con &lt;option&gt;. <br>
+            <form action="">
+                <select name="options">
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                </select>
+            </form>
+            <br>
+            <br>
+            <i style="color: #320812;"> &lt;button&gt; </i><br>
+            Se utiliza para crear un botón dentro de un formulario. Puede ser de tipo submit, reset, o button. <br>
+            <form action="">
+                <button type="submit">Enviar</button>
+                <button type="reset">Restablecer</button>
+                <button type="button">Siguiente</button>
+            </form>
+            <br>
+            <br>
+            <i style="color: #320812;"> Validación de Formularios </i><br>
+            Se realiza en el navegador antes de enviar los datos al servidor, utilizando atributos HTML como required, pattern, minlength, maxlength, entre otros. <br>
+            <form action="">
+                <input type="text" name="username" required minlength="4" maxlength="12" placeholder="Nombre de usuario"><br>
+                <input type="email" name="email" required placeholder="Correo electrónico"><br>
+                <input type="submit" value="Enviar"><br>
+            </form>
+            <br>
+            <br>
+        </div>
+
+        <div class="items item5 social">
+            <p>
+                Contactanos: 
+                <a href="https://www.facebook.com/lucy.jimenez.16121471?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Lucy </a>
+                <a href="https://www.instagram.com/_lucyjimenez_?igsh=MWp6OGx5YnV4cjlxMw=="><i class="fa-brands fa-instagram "></i> Lucy </a>
+                <a href="mailto:l20520363@chilpancingo.tecnm.mx"><i class="fa-regular fa-envelope-open "></i> Lucy </a>
+                <a href="https://www.facebook.com/FelixJosue.Bautista?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Félix </a>
+                <a href="https://www.instagram.com/fmk_alguienmas?igsh=MXNtNGswandyNWN6eA=="><i class="fa-brands fa-instagram "></i> Félix</a>
+                <a href="mailto:xilef_osu@hotmail.com"><i class="fa-regular fa-envelope-open "></i> Félix</a>
+            </p>
+            <p style="text-align: right;">
+                Chilpancingo de los bravo, Guerrero. Fecha de creación: 01/09/2024
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

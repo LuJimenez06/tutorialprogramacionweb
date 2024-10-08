@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas en HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles-2.css">
+    <link rel="stylesheet" href="enlaces.css">
+    <script src="https://kit.fontawesome.com/8b10682772.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="menu">
+            <div class="logo"> <img src="Help-Step.png" /> </div>
+            <a href="index.html">Inicio</a>
+            <a class="active" href="#">Tutoriales HTML</a>
+            <a href="CSS-1.html">Tutoriales CSS</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="items item1"> <center> Listas </center> </div>
+        <div class="items item2"> 
+            <a href="HTML-1.html"> 1. Introduccion </a><br>
+            <a href="HTML-2.html"> 2. Etiquetas </a><br> 
+            <a href="HTML-3.html"> 3. Enlaces </a><br> 
+            <a class="active" href="#"> 4. Listas </a><br> 
+            <a href="HTML-5.html"> 5. Imagenes </a><br> 
+            <a href="HTML-6.html"> 6. Tablas </a><br> 
+            <a href="HTML-7.html"> 7. Formularios </a><br> 
+            <a href="HTML-8.html"> 8. Audios y Videos </a><br> 
+            <a href="HTML-9.html"> 9. Gráficos SVG </a><br> 
+        </div>
+        <div class="items item4">
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> <center> Listas en HTML </center> </i><br>
+            Las listas en HTML son una manera eficiente de organizar y presentar elementos relacionados de manera estructurada. HTML proporciona tres tipos principales de listas: listas ordenadas, listas no ordenadas, y listas de definición. Cada una tiene un propósito específico y se representa mediante diferentes etiquetas. A continuación, te explico cada una de ellas: <br>
+            <br>
+            <br>
+            <i style="color: #320812;"> Listas no ordenadas </i> <br>
+            Las listas no ordenadas se utilizan para presentar elementos sin un orden específico. Cada elemento de la lista está precedido por un marcador o viñeta (bullet). &lt;ul&gt; (unordered list) se usa para definir una lista no ordenada. <br>
+            Cada elemento dentro de la lista se define con la etiqueta &lt;il&gt; (list item). <br>
+            El atributo de las listas no ordenadas es type que puede ser (circle), (square), (disc) o (non)
+            <table>
+                <tr>
+                    <td>
+                        <p class="html">
+                            <br>
+                            &lt;ul&gt; <br>
+                            &emsp; &lt;li&gt; Elemento 1 &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Elemento 2 &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Elemento 3 &lt;/li&gt;<br>
+                            &lt;/ul&gt;<br>
+                            <br><br>
+                            &lt;ul type="circle"&gt; <br>
+                            &emsp; &lt;li&gt; Circulo &lt;/li&gt;<br>
+                            &lt;/ul&gt;<br><br>
+                            &lt;ul type="square"&gt; <br>
+                            &emsp; &lt;li&gt; Cuadrado &lt;/li&gt;<br>
+                            &lt;/ul&gt;<br><br>
+                            &lt;ul type="disc"&gt; <br>
+                            &emsp; &lt;li&gt; Disco &lt;/li&gt;<br>
+                            &lt;/ul&gt;<br><br>
+                            &lt;ul type="non"&gt; <br>
+                            &emsp; &lt;li&gt; Sin signo &lt;/li&gt;<br>
+                            &lt;/ul&gt;<br><br>
+                        </p>
+                    </td>
+                    <td>
+                        <br><br>
+                        <ul>
+                            <li> Elemento 1 </li>
+                            <li> Elemento 2 </li>
+                            <li> Elemento 3 </li>
+                        </ul>
+                        <br><br>
+                        <ul type="circle">
+                            <li> Circulo </li>
+                        </ul>
+                        <br>
+                        <ul type="square">
+                            <li> Cuadrado </li>
+                        </ul>
+                        <br>
+                        <ul type="disc">
+                            <li> Disco </li>
+                        </ul>
+                        <br>
+                        <ul type="non">
+                            <li> Sin signo </li>
+                        </ul>
+                        <br>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <i style="color: #320812;"> Listas ordenadas </i> <br>
+            Las listas ordenadas se utilizan cuando los elementos tienen un orden específico. Cada elemento está numerado automáticamente por el navegador. &lt;ol&gt; (ordered list) se usa para definir una lista ordenada. <br>
+            El atributo de las listas ordenadas es type que puede ser (A), (square), (disc) o (non)
+            Cada elemento dentro de la lista también se define con la etiqueta &lt;il&gt; (list item). <br>
+            <table>
+                <tr>
+                    <td>
+                        <p class="html">
+                            <br>
+                            &lt;ol&gt; <br>
+                            &emsp; &lt;li&gt; Elemento 1 &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Elemento 2 &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Elemento 3 &lt;/li&gt;<br>
+                            &lt;/ol&gt;<br>
+                            <br><br>
+                            &lt;ol type="A"&gt; <br>
+                            &emsp; &lt;li&gt; Letras mayusculas &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Letras mayusculas &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Letras mayusculas &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Letras mayusculas &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Letras mayusculas &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Letras mayusculas &lt;/li&gt;<br>
+                            &lt;/ol&gt;<br><br>
+                            &lt;ol type="a"&gt; <br>
+                            &emsp; &lt;li&gt; Letras minusculas &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Letras minusculas &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Letras minusculas &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Letras minusculas &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Letras minusculas &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Letras minusculas &lt;/li&gt;<br>
+                            &lt;/ol&gt;<br><br>
+                            &lt;ol type="I"&gt; <br>
+                            &emsp; &lt;li&gt; Números romanos &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Números romanos &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Números romanos &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Números romanos &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Números romanos &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Números romanos &lt;/li&gt;<br>
+                            &lt;/ol&gt;<br><br>
+                            &lt;ol type="i"&gt; <br>
+                            &emsp; &lt;li&gt; Números romanos &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Números romanos &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Números romanos &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Números romanos &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Números romanos &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Números romanos &lt;/li&gt;<br>
+                            &lt;/ol&gt;<br><br>
+                            &lt;ol type="1"&gt; <br>
+                            &emsp; &lt;li&gt; Números &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Números &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Números &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Números &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Números &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Números &lt;/li&gt;<br>
+                            &lt;/ol&gt;<br><br>
+                        </p>
+                    </td>
+                    <td>
+                        <br><br>
+                        <ol>
+                            <li> Elemento 1 </li>
+                            <li> Elemento 2 </li>
+                            <li> Elemento 3 </li>
+                        </ol>
+                        <br><br>
+                        <ol type="A">
+                            <li> Letras mayusculas </li>
+                            <li> Letras mayusculas </li>
+                            <li> Letras mayusculas </li>
+                            <li> Letras mayusculas </li>
+                            <li> Letras mayusculas </li>
+                            <li> Letras mayusculas </li>
+                        </ol>
+                        <br>
+                        <ol type="a">
+                            <li> Letras minusculas </li>
+                            <li> Letras minusculas </li>
+                            <li> Letras minusculas </li>
+                            <li> Letras minusculas </li>
+                            <li> Letras minusculas </li>
+                            <li> Letras minusculas </li>
+                        </ol>
+                        <br>
+                        <ol type="I">
+                            <li> Números romanos </li>
+                            <li> Números romanos </li>
+                            <li> Números romanos </li>
+                            <li> Números romanos </li>
+                            <li> Números romanos </li>
+                            <li> Números romanos </li>
+                        </ol>
+                        <br>
+                        <ol type="i">
+                            <li> Números romanos </li>
+                            <li> Números romanos </li>
+                            <li> Números romanos </li>
+                            <li> Números romanos </li>
+                            <li> Números romanos </li>
+                            <li> Números romanos </li>
+                        </ol>
+                        <br>
+                        <ol type="1">
+                            <li> Números </li>
+                            <li> Números </li>
+                            <li> Números </li>
+                            <li> Números </li>
+                            <li> Números </li>
+                            <li> Números </li>
+                        </ol>
+                        <br>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <i style="color: #320812;"> Listas anidadas </i> <br>
+            Puedes anidar listas dentro de otras listas para crear subcategorías o jerarquías de elementos. <br>
+            <table>
+                <tr>
+                    <td>
+                        <p class="html">
+                            <br>
+                            &lt;ul&gt; <br>
+                            &emsp; &lt;li&gt; Elemento 1 &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Elemento 2 &lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; Elemento 3 &lt;/li&gt;<br>
+                            &emsp; &emsp; &lt;ul type="circle"&gt; <br>
+                            &emsp; &emsp; &emsp; &lt;li&gt; Circulo &lt;/li&gt;<br>
+                            &emsp; &emsp; &emsp; &lt;li&gt; Circulo &lt;/li&gt;<br>
+                            &emsp; &emsp; &emsp; &lt;li&gt; Circulo &lt;/li&gt;<br>
+                            &emsp; &emsp; &lt;/ul&gt;<br>
+                            &emsp; &lt;li&gt; Elemento 4 &lt;/li&gt;<br>
+                            &lt;/ul&gt;<br>
+                        </p>
+                    </td>
+                    <td>
+                        <br><br>
+                        <ul>
+                            <li> Elemento 1 </li>
+                            <li> Elemento 2 </li>
+                            <li> Elemento 3 </li>
+                                <ul type="circle">
+                                    <br>
+                                    <li> Circulo </li>
+                                    <li> Circulo </li>
+                                    <li> Circulo </li>
+                                </ul>
+                                <br><br>
+                            <li> Elemento 4 </li>
+                        </ul>
+                        <br>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <i style="color: #320812; font-size: 24px;"> Listas de definición </i> <br>
+            Las listas de definición se utilizan para definir términos y sus descripciones asociadas, como en un diccionario o un glosario. <br><br>
+            <i style="color: #320812; font-size: 22px;"> Etiqueta dl </i><br>
+            &lt;dl&gt; (definition list) se usa para definir una lista de definición. <br><br>
+            <i style="color: #320812; font-size: 22px;"> Etiqueta dt </i><br>
+            Cada término se define con la etiqueta &lt;dt&gt; (definition term) se usa para definir el termino. <br><br>
+            <i style="color: #320812; font-size: 22px;"> Etiqueta dd </i><br>
+            La descripción del término se define con la etiqueta &lt;dd&gt; (definition description) se usa para definir la descripción. <br><br>
+            <table>
+                <tr>
+                    <td>
+                        <p class="html">
+                            <br>
+                            &lt;dl&gt;<br>
+                            &emsp;  &lt;dt&gt;HTML&lt;/dt&gt;<br>
+                            &emsp;  &lt;dd&gt;Lenguaje de marcado para estructurar páginas web.&lt;/dd&gt;<br>
+                                
+                            &emsp;  &lt;dt&gt;CSS&lt;/dt&gt;<br>
+                            &emsp;  &lt;dd&gt;Lenguaje de estilo para diseñar páginas web.&lt;/dd&gt;<br>
+                                
+                            &emsp;  &lt;dt&gt;JavaScript&lt;/dt&gt;<br>
+                            &emsp;  &lt;dd&gt;Lenguaje de programación para interactividad en la web.&lt;/dd&gt;<br>
+                            &lt;/dd&gt;<br>
+                            <br>
+                        </p>
+                    </td>
+                    <td>
+                        <br><br>
+                        <dl>
+                            <dt>HTML</dt>
+                            <dd>Lenguaje de marcado para estructurar páginas web.</dd>
+                            <br>
+                            <dt>CSS</dt>
+                            <dd>Lenguaje de estilo para diseñar páginas web.</dd>
+                            <br>
+                            <dt>JavaScript</dt>
+                            <dd>Lenguaje de programación para interactividad en la web.</dd>
+                        </dl>
+                        <br><br>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="items item5 social">
+            <p>
+                Contactanos: 
+                <a href="https://www.facebook.com/lucy.jimenez.16121471?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Lucy </a>
+                <a href="https://www.instagram.com/_lucyjimenez_?igsh=MWp6OGx5YnV4cjlxMw=="><i class="fa-brands fa-instagram "></i> Lucy </a>
+                <a href="mailto:l20520363@chilpancingo.tecnm.mx"><i class="fa-regular fa-envelope-open "></i> Lucy </a>
+                <a href="https://www.facebook.com/FelixJosue.Bautista?mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook "></i> Félix </a>
+                <a href="https://www.instagram.com/fmk_alguienmas?igsh=MXNtNGswandyNWN6eA=="><i class="fa-brands fa-instagram "></i> Félix</a>
+                <a href="mailto:xilef_osu@hotmail.com"><i class="fa-regular fa-envelope-open "></i> Félix</a>
+            </p>
+            <p style="text-align: right;">
+                Chilpancingo de los bravo, Guerrero. Fecha de creación: 01/09/2024
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
